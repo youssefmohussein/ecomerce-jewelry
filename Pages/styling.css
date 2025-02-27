@@ -32,15 +32,16 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 20px 40px;
+    padding: 23px 40px;
     justify-content: space-between;
 }
 
 .navbar:hover {
-    background-color: beige;
+    background-color: #ba957d;
 }
 
 .navigation a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     padding-right: 30px;
     color: black;
@@ -62,5 +63,5 @@
 .icons a {
     padding-left: 30px;
     font-size: 25px;
-    color: beige;
+    color: black;
 }
