@@ -10,7 +10,7 @@
 
 
 .video-container {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -25,6 +25,7 @@
     object-fit: cover;
 }
 
+
 .navbar {
     position: fixed;
     top: 0;
@@ -34,10 +35,11 @@
     align-items: center;
     padding: 23px 40px;
     justify-content: space-between;
+    transition: background-color .5s ease-in-out;
 }
 
 .navbar:hover {
-    background-color: #ba957d;
+    background-color: rgba(186, 149, 125, 0.8);
 }
 
 .navigation a {
@@ -66,14 +68,26 @@
     color: black;
 }
 
+.content {
+    background-color: var(--background-color);
+    margin-top: 850px;
+    text-align: center;
+    min-width: 100%;
+}
+
 /* norhan styling */
 
 :root {
-    --background-color: #F8F3EE; /* Soft off-white */
-    --text-color: #5C4033; /* Dark Chocolate Brown */
-    --input-line: #8C6F54; /* Rich Warm Taupe */
-    --button-color: #A07C63; /* Slightly Darker Beige */
-    --button-hover: #5C4033; /* Dark Brown */
+    --background-color: #F8F3EE;
+    /* Soft off-white */
+    --text-color: #5C4033;
+    /* Dark Chocolate Brown */
+    --input-line: #8C6F54;
+    /* Rich Warm Taupe */
+    --button-color: #A07C63;
+    /* Slightly Darker Beige */
+    --button-hover: #5C4033;
+    /* Dark Brown */
 }
 
 /* General Page Styling */
@@ -126,7 +140,8 @@ input {
 }
 
 input::placeholder {
-    color: var(--input-line); /* Soft taupe */
+    color: var(--input-line);
+    /* Soft taupe */
     font-weight: 300;
 }
 
@@ -181,11 +196,13 @@ input:focus {
 }
 
 .forgot-password:hover {
-    color: var(--button-hover); /* Dark brown on hover */
+    color: var(--button-hover);
+    /* Dark brown on hover */
 }
 
 .forgot-password:active {
-    transform: scale(0.98); /* Slight press effect */
+    transform: scale(0.98);
+    /* Slight press effect */
 }
 
 /* Login Button */
@@ -204,11 +221,13 @@ input:focus {
 }
 
 .continue-btn:hover {
-    background: var(--button-hover); /* Dark brown on hover */
+    background: var(--button-hover);
+    /* Dark brown on hover */
 }
 
 .continue-btn:active {
-    transform: scale(0.98); /* Slight press effect */
+    transform: scale(0.98);
+    /* Slight press effect */
 }
 
 /* Responsive */
