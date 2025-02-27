@@ -65,3 +65,171 @@
     font-size: 25px;
     color: black;
 }
+
+/* norhan styling */
+
+:root {
+    --background-color: #F8F3EE; /* Soft off-white */
+    --text-color: #5C4033; /* Dark Chocolate Brown */
+    --input-line: #8C6F54; /* Rich Warm Taupe */
+    --button-color: #A07C63; /* Slightly Darker Beige */
+    --button-hover: #5C4033; /* Dark Brown */
+}
+
+/* General Page Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login Container */
+.login-container {
+    background: var(--background-color);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 350px;
+    text-align: left;
+}
+
+/* Header */
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+    margin: 20px 0;
+}
+
+label {
+    font-size: 15px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 2px solid var(--input-line);
+    background: transparent;
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+input::placeholder {
+    color: var(--input-line); /* Soft taupe */
+    font-weight: 300;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--text-color);
+}
+
+/* Password Input with Icon */
+.password-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.password-container input {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/* Remember Me & Forgot Password */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-color);
+}
+
+/* Forgot Password - Same animation as Login Button */
+.forgot-password {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--button-color);
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.forgot-password:hover {
+    color: var(--button-hover); /* Dark brown on hover */
+}
+
+.forgot-password:active {
+    transform: scale(0.98); /* Slight press effect */
+}
+
+/* Login Button */
+.continue-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--button-color);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+.continue-btn:hover {
+    background: var(--button-hover); /* Dark brown on hover */
+}
+
+.continue-btn:active {
+    transform: scale(0.98); /* Slight press effect */
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .login-container {
+        width: 90%;
+    }
+}
+
+.back-to-login {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.back-to-login a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--button-color);
+    transition: color 0.3s ease;
+}
+
+.back-to-login a:hover {
+    color: var(--button-hover);
+}
