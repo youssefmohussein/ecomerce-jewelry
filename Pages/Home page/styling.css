@@ -37,6 +37,11 @@
     padding: 23px 40px;
     justify-content: space-between;
     transition: background-color .5s ease-in-out;
+    border-style: solid;
+    border-width: 1px;
+    border-top: 5px;
+    border-right: 5px;
+    border-color: rgba(186, 149, 125, 0.8);
 }
 
 .navbar:hover {
@@ -70,7 +75,7 @@
 }
 
 .content {
-    margin-top: 97vh;
+    margin-top: 100vh;
     /* Ensures it appears right after the video */
     text-align: center;
     justify-content: center;
