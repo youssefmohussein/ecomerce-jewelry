@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
+
 }
 
 
@@ -71,14 +71,15 @@
 
 .content {
     background-color: var(--background-color);
+    margin-top: 850px;
     margin-top: 1300px;
     text-align: center;
     min-width: 100%;
-     
+
 }
 
 /* norhan styling */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -87,14 +88,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
- body{
-    background: linear-gradient(to right,#FAE3D9,#C8A27D);
+body {
+    background: linear-gradient(to right, #FAE3D9, #C8A27D);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
- }
+}
 
 .container {
     background-color: #fff;
@@ -106,6 +107,7 @@
     max-width: 100%;
     min-height: 480px;
 }
+
 /*Styles paragraphs inside the container*/
 .container p {
     font-size: 14px;
@@ -117,6 +119,7 @@
 .container span {
     font-size: 12px;
 }
+
 /*Styles links */
 .container a {
     color: #333;
@@ -124,9 +127,11 @@
     text-decoration: none;
     margin: 15px 0 10px;
 }
+
 /*Styles all buttons inside the form.*/
 .container button {
-    background-color: #8B5E3C; /* Dark Brown */
+    background-color: #8B5E3C;
+    /* Dark Brown */
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -153,6 +158,7 @@
     padding: 0 40px;
     height: 100%;
 }
+
 /*Styles all text fields Name, Email, Password*/
 .container input {
     background-color: #eee;
@@ -177,6 +183,7 @@
     width: 50%;
     z-index: 2;
 }
+
 /*Moves the Sign-In form off the screen when Sign Up is clicked*/
 .container.active .sign-in {
     transform: translateX(100%);
@@ -188,6 +195,7 @@
     opacity: 0;
     z-index: 1;
 }
+
 /*Moves the Sign-Up form on to the screen.*/
 .container.active .sign-up {
     transform: translateX(100%);
@@ -195,17 +203,23 @@
     z-index: 5;
     animation: move 0.6s;
 }
+
 /*Creates a smooth transition when switching forms*/
 @keyframes move {
-    0%, 49.99% {
+
+    0%,
+    49.99% {
         opacity: 0;
         z-index: 1;
     }
-    50%, 100% {
+
+    50%,
+    100% {
         opacity: 1;
         z-index: 5;
     }
 }
+
 .toggle-container {
     position: absolute;
     top: 0;
@@ -217,6 +231,7 @@
     border-radius: 150px 0 0 100px;
     z-index: 1000;
 }
+
 /*Moves the toggle panel to the left when switching forms*/
 
 .container.active .toggle-container {
@@ -225,7 +240,8 @@
 }
 
 .toggle {
-    background: linear-gradient(to right, #a67b5b, #8B5E3C); /* Brown Gradient */
+    background: linear-gradient(to right, #a67b5b, #8B5E3C);
+    /* Brown Gradient */
     color: #fff;
     position: relative;
     left: -100%;
@@ -234,6 +250,7 @@
     transform: translateX(0);
     transition: all 0.6s ease-in-out;
 }
+
 /*Moves the toggle panel to the left when switching forms*/
 .container.active .toggle {
     transform: translateX(50%);
@@ -269,4 +286,85 @@
 
 .container.active .toggle-right {
     transform: translateX(200%);
+}
+
+/* malak style*/
+/* Container for the best-selling products */
+.product-container p {
+    padding-top: 20px;
+}
+
+.product-container {
+    text-align: center;
+    padding-top: 10px;
+    ;
+    display: flex;
+    /* byzabt kolo yb2a row wahed */
+    width: 20%;
+    margin-left: 30px;
+    margin-right: 30;
+
+
+}
+
+/* Heading for Best Seller Products */
+.section-best-seller {
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: serif;
+    padding: 40px;
+
+}
+
+/* Container for each product */
+.product-item1,
+.product-item2,
+.product-item3,
+.product-item4 {
+
+    padding-right: 30px;
+    margin: 10px;
+
+}
+
+/* Image styling */
+.image-1,
+.image-2,
+.image-3,
+.image-4 {
+    padding-left: 20px;
+    width: 300px;
+    padding-right: 40px;
+    margin-right: 40px;
+
+}
+
+/* Title for the product (below the image) */
+.product-title1,
+.product-title2,
+.product-title3,
+.product-title4 {
+    font-size: 15px;
+    color: black;
+    margin: auto;
+    padding-right: 61px;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+/* Price styling */
+.product-price1,
+.product-price2,
+.product-price3,
+.product-price4 {
+    font-size: 13px;
+    color: black;
+    margin: -10px;
+    font-weight: bold;
+    padding-right: 61px;
+
 }
