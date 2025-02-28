@@ -37,14 +37,14 @@
     padding: 23px 40px;
     justify-content: space-between;
     transition: background-color .5s ease-in-out;
-    border-style: solid;
+    border-style: outset;
     border-width: 1px;
     border-top: 5px;
     border-right: 5px;
-    border-color: rgba(186, 149, 125, 0.8);
+    border-color: rgba(186, 149, 125, 0.9);
 }
 
-.navbar:hover {
+.homepage .navbar:hover {
     background-color: rgba(186, 149, 125, 0.8);
 }
 

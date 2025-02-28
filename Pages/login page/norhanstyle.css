@@ -9,7 +9,8 @@
 }
 
 body {
-    background: linear-gradient(to right, #FAE3D9, #C8A27D);
+
+    background-color: rgba(186, 149, 125, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
