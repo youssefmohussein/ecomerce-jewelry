@@ -71,9 +71,10 @@
 
 .content {
     background-color: var(--background-color);
-    margin-top: 850px;
+    margin-top: 1300px;
     text-align: center;
     min-width: 100%;
+     
 }
 
 /* norhan styling */
