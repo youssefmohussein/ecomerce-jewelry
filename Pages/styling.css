@@ -70,30 +70,32 @@
 }
 
 .content {
-    background-color: var(--background-color);
-    margin-top: 850px;
+    margin-top: 97vh;
+    /* Ensures it appears right after the video */
     text-align: center;
-    min-width: 100%;
-
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 40px 0;
 }
+
 
 
 /* malak style*/
 /* Container for the best-selling products */
 .product-container p {
+
     padding-top: 20px;
 }
 
 .product-container {
     text-align: center;
     padding-top: 10px;
-    ;
     display: flex;
     /* byzabt kolo yb2a row wahed */
     width: 20%;
     margin-left: 30px;
     margin-right: 30;
-
+    margin-top: -10px;
 
 }
 
