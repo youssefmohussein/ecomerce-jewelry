@@ -248,3 +248,120 @@
     box-shadow: 5px 5px 25px rgba(186, 149, 125, 0.8);
 
 }
+
+
+
+
+
+.Product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    background-color: rgba(186, 149, 125, 0.8);
+    padding: 200px;
+}
+
+
+
+.product-ring-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-ring-image img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.pdetails {
+    max-width: 400px;
+    color: white;
+}
+
+.pdetails h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+
+}
+
+.pdetails p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+button {
+    background: black;
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+.pdetails details {
+    padding-top: 20px;
+}
+
+details {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+
+
+summary:hover {
+    color: black;
+}
+
+details[open] {
+    animation: expand 0.4s ease-out;
+}
+
+@keyframes expand {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    to {
+        max-height: 200px;
+        opacity: 1;
+    }
+}
+
+/* Color Swatches */
+.color-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.color-swatch {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.gold {
+    background: gold;
+}
+
+.green {
+    background: darkgreen;
+}
+
+.black {
+    background: black;
+}
+
+.color-swatch.active {
+    border: 2px solid #333;
+}
