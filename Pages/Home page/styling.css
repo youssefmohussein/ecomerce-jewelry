@@ -133,7 +133,6 @@
     width: 300px;
     padding-right: 40px;
     margin-right: 40px;
-
 }
 
 /* Title for the product (below the image) */
@@ -235,7 +234,8 @@
 
 }
 
-.add-to-cart {
+.add-to-cart,
+button {
     background-color: rgba(186, 149, 125, 0.8);
     color: black;
     width: 300px;
@@ -250,15 +250,19 @@
 }
 
 
+/* yousssef rings */
+.rings .navbar {
+    background-color: rgba(186, 149, 125, 0.9);
+    z-index: 1000;
 
-
+}
 
 .Product {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 150px;
-    background-color: rgba(186, 149, 125, 0.8);
+    background-color: whitesmoke;
     padding: 200px;
 }
 
@@ -269,42 +273,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .product-ring-image img {
-    width: 80%;
+    width: 150%;
     display: block;
-    margin: auto;
+    position: relative;
+    top: -100px;
+
+
+    /* border-style: solid;
+    border-radius: 20%;
+    border-width: 5px;
+    border-color: rgba(186, 149, 125, 0.8); */
 }
 
 .pdetails {
     max-width: 400px;
-    color: white;
+    color: black;
+    position: relative;
+    top: -100px;
 }
 
 .pdetails h2 {
     font-size: 28px;
     margin-bottom: 20px;
-
+    padding-bottom: 20px;
 }
 
 .pdetails p {
     font-size: 18px;
     margin-bottom: 10px;
+    padding-bottom: 20px;
 }
 
-button {
+/* button {
     background: black;
     color: white;
     padding: 12px 18px;
     font-size: 16px;
     border-radius: 8px;
     border: none;
-}
+} */
 
 .pdetails details {
     padding-top: 20px;
 }
+
 
 details {
     margin-top: 15px;
