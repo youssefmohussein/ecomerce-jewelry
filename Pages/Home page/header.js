@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const colorSwatches = document.querySelectorAll(".color-swatch");
 
     const imagePaths = {
-        "gold": "../Home page/home-images/rings/gold.jpg",
-        "green": "../Home page/home-images/rings/darkgreen.jpg",
-        "black": "../Home page/home-images/rings/black.jpg"
+        "gold": "../Home page/home-images/rings/gold.png",
+        "green": "../Home page/home-images/rings/darkgreen.png",
+        "black": "../Home page/home-images/rings/black.png"
     };
 
     colorSwatches.forEach(swatch => {
