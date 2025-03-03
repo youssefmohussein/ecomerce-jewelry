@@ -1,0 +1,203 @@
+/* Headeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 23px 40px;
+    justify-content: space-between;
+    transition: background-color .5s ease-in-out;
+    border-style: outset;
+    border-width: 1px;
+    border-top: 5px;
+    border-right: 5px;
+    border-color: rgba(186, 149, 125, 0.9);
+}
+
+
+.navigation a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    padding-right: 30px;
+    color: black;
+    font-size: 20px;
+}
+
+.logo h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.icons a {
+    padding-left: 30px;
+    font-size: 25px;
+    color: black;
+}
+
+/* Headeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
+
+.add-to-cart,
+button {
+    background-color: rgba(186, 149, 125, 0.8);
+    color: black;
+    width: 300px;
+    height: 45px;
+    font-size: 19px;
+    border: #8C6F54
+}
+
+.add-to-cart:hover {
+    box-shadow: 5px 5px 25px rgba(186, 149, 125, 0.8);
+
+}
+
+
+/* yousssef rings */
+.rings .navbar {
+    background-color: rgba(186, 149, 125, 0.9);
+    z-index: 1000;
+
+}
+
+.Product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    background-color: whitesmoke;
+    padding: 200px;
+}
+
+
+
+.product-ring-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.product-ring-image img {
+    width: 150%;
+    display: block;
+    position: relative;
+    top: -100px;
+
+
+    /* border-style: solid;
+    border-radius: 20%;
+    border-width: 5px;
+    border-color: rgba(186, 149, 125, 0.8); */
+}
+
+.pdetails {
+    max-width: 400px;
+    color: black;
+    position: relative;
+    top: -100px;
+}
+
+.pdetails h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.pdetails p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+/* button {
+    background: black;
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+} */
+
+.pdetails details {
+    padding-top: 20px;
+}
+
+
+details {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+
+
+summary:hover {
+    color: black;
+}
+
+details[open] {
+    animation: expand 0.4s ease-out;
+}
+
+@keyframes expand {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    to {
+        max-height: 200px;
+        opacity: 1;
+    }
+}
+
+/* Color Swatches */
+.color-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.color-swatch {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.gold {
+    background: gold;
+}
+
+.green {
+    background: darkgreen;
+}
+
+.black {
+    background: black;
+}
+
+.color-swatch.active {
+    border: 2px solid #333;
+}
