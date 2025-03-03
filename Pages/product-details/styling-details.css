@@ -679,3 +679,113 @@ details[open] {
 
 
 
+
+
+
+
+
+
+
+
+/* jana styling */
+
+
+.necklace .navbar {
+    background-color: rgba(186, 149, 125, 0.9);
+    z-index: 1000;
+
+}
+
+.Product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    background-color: whitesmoke;
+    padding: 200px;
+}
+
+
+
+.product-necklace-image {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.product-necklace-image img {
+    width: 150%;
+    display: block;
+    position: relative;
+    top: -100px;
+
+
+    /* border-style: solid;
+    border-radius: 20%;
+    border-width: 5px;
+    border-color: rgba(186, 149, 125, 0.8); */
+}
+
+.pdetails {
+    max-width: 400px;
+    color: black;
+    position: relative;
+    top: -100px;
+}
+
+.pdetails h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.pdetails p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+/* button {
+    background: black;
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+} */
+
+.pdetails details {
+    padding-top: 20px;
+}
+
+
+details {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+
+
+summary:hover {
+    color: black;
+}
+
+details[open] {
+    animation: expand 0.4s ease-out;
+}
+
+@keyframes expand {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    to {
+        max-height: 200px;
+        opacity: 1;
+    }
+}
