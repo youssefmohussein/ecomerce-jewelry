@@ -1,45 +1,46 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
 .background-img {
-margin-top:81.99px;
-position: relative;
-height: auto;
-top: 0;
-left: 0;
-height: 100%;
-width: 100%; 
-z-index: -1;
-overflow: hidden; 
-display: block;
-margin-top: 0px;
+  margin-top: 81.99px;
+  position: relative;
+  height: auto;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+  display: block;
+  margin-top: 0px;
 }
 
 .background-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .background-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 45px;
-    font-weight: bold; 
-    font-family: adobe-caslon-pro, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: adobe-caslon-pro, sans-serif;
+  margin-right: 0px;
 }
 
 
-.product-spacerow{
-  width:100%;
+.product-spacerow {
+  width: 100%;
   padding-left: 34px;
   margin-bottom: 5px;
 }
@@ -47,7 +48,7 @@ margin-top: 0px;
 .product1-name,
 .product2-name,
 .product4-name,
-.product5-name{
+.product5-name {
   font-size: 17px;
   margin: auto;
   font-weight: 500;
@@ -58,7 +59,7 @@ margin-top: 0px;
   font-family: adobe-caslon-pro, sans-serif;
 }
 
-.product3-name{
+.product3-name {
   font-size: 17px;
   margin: auto;
   font-weight: 500;
@@ -69,23 +70,24 @@ margin-top: 0px;
   font-family: adobe-caslon-pro, sans-serif;
 }
 
-.product4-name{
+.product4-name {
   padding-left: 50px;
 }
 
 
-.product-4{
-  padding-left: 165px;
-}
-.product-price{
-  color:rgb(170, 170, 170);
+.product-4 {
   padding-left: 165px;
 }
 
-.product-preview{
-  width:400px ;
+.product-price {
+  color: rgb(170, 170, 170);
+  padding-left: 165px;
+}
+
+.product-preview {
+  width: 400px;
   display: inline-block;
-  margin-top: 50px; 
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,23 +97,23 @@ margin-top: 0px;
 .product-2,
 .product-3,
 .product-4,
-.product-5{
+.product-5 {
   padding-left: 0px;
-  width: 450px;
+  width: 400px;
   padding-right: 40px;
-  margin-right: 40px;
+  margin-right: 0%;
 }
 
-.product-info{
+.product-info {
   width: 100%;
   margin-left: 0px;
   padding-left: 5px;
 }
 
-.product-grid{
+.product-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 50px;
   row-gap: 40px;
-  
+
 }
