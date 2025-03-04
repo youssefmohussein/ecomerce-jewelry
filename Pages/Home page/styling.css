@@ -178,8 +178,10 @@
     padding-left: 25px;
 }
 
+/*    */
 .product-image img:hover {
     box-shadow: -10px 10px 25px rgba(186, 149, 125, 0.8);
+    transform: scale(1.1);
 }
 
 
