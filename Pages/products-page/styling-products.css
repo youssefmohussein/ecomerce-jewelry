@@ -48,7 +48,8 @@
 .product1-name,
 .product2-name,
 .product4-name,
-.product5-name {
+.product5-name,
+.product6-name {
   font-size: 17px;
   margin: auto;
   font-weight: 500;
@@ -80,6 +81,10 @@
   padding-left: 165px;
 }
 
+.product-6{
+  width:1000px;
+}
+
 .product-price {
   color: rgb(170, 170, 170);
   padding-left: 165px;
@@ -99,7 +104,8 @@
 .product-2,
 .product-3,
 .product-4,
-.product-5 {
+.product-5,
+.product-6 {
   padding-left: 0px;
   width: 400px;
   padding-right: 40px;
