@@ -126,7 +126,7 @@
     row-gap: 40px;
   
   }
-  
+ 
   .product-grid .product-spacerow
   {
     padding-left:70px ;
@@ -134,5 +134,7 @@
   .product-price{
     position: relative;
   }
+  
+ 
   
  
