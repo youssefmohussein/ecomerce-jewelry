@@ -15,6 +15,24 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </nav>
     `;
+
+    let lastScrollTop = 0; // Stores the last scroll position
+    const navbar = document.querySelector(".navbar"); // Selects the navbar element
+
+    window.addEventListener("scroll", function () {
+        let currentScroll = window.pageYOffset;
+        // Gets the current vertical scroll position
+
+        if (currentScroll > lastScrollTop) {
+            navbar.classList.add("scrolled"); // Add background when scrolling down
+        } else if (currentScroll === 0) {
+            navbar.classList.remove("scrolled"); // Remove background when at the top
+        }
+
+
+    });
+
+
     const productImage = document.getElementById("productImage");
     const colorSwatches = document.querySelectorAll(".color-swatch");
 
@@ -109,4 +127,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         </div>
     </footer>`;
+
+
 });
