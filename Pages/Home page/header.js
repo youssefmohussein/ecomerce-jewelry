@@ -79,10 +79,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="footer-section">
                 <h3>Services</h3>
                 <ul>
-                    <li><a href="#">Refubd-Policy</a></li>
+                    <li><a href="#">Refund-Policy</a></li>
                     <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Contact-US</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="../contact us/contactus.html">Contact-US</a></li>
+                    <li><a href="../faq/faq.html">FAQ</a></li>
                 </ul>
             </div>
 
