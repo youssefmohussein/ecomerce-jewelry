@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
 
 * {
     font-family: sans-serif;
@@ -138,7 +139,12 @@
     width: 300px;
     padding-right: 40px;
     margin-right: 40px;
+    transition: transform 0.3s ease;
+
 }
+.image-1:hover ,.image-2:hover ,.image-3:hover , .image-4:hover {
+    transform: scale(1.1);
+  }
 
 
 
@@ -187,7 +193,7 @@
     padding-left: 25px;
 }
 
-/*    */
+
 .product-image img:hover {
     box-shadow: -10px 10px 25px rgba(186, 149, 125, 0.8);
     transform: scale(1.1);
@@ -247,6 +253,40 @@
 
 
 
+
+
+/* model section*/
+.model-content{
+    text-align: center; 
+    gap: 30px;
+
+}
+.heading-text{
+  margin-bottom: 20px;
+  font-size: 20px;    
+  font-weight: bold;
+ font-style: italic;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.images {
+    display: flex;         
+    justify-content: center; 
+    gap: 30px;
+                 
+  }
+  
+  .images img {
+    width: 560px; 
+    height: 560px;
+    
+  }
+
+
+
+
+
+
+
 /* collection */
 
 
@@ -294,6 +334,77 @@
     color: black;
     font-style: italic;
 }
+
+
+/* qoute section malak */
+.quote-section1 {
+    text-align: center;           
+    padding-top: 20px; 
+        
+  }
+  .heading-between-qoutes{
+    font-size: 60%;             
+    font-weight: bold;           
+    margin-bottom: 5px;
+  
+  }
+  .content1 {
+    display: flex;                
+    align-items: center;         
+    justify-content: center;
+    padding-top: 20px;  
+     
+  }
+  
+
+  .quote-image1 {
+
+    width: 450px;                  
+    height: 400px;                 
+    margin-right: 20px;           
+    object-fit: cover;            
+    margin-left: 10%;           
+  }
+  
+
+  .quote-text1 {
+    font-size: 60%;           
+    font-style: italic;          
+    max-width: 40%;               
+    text-align: right;            
+  }
+
+
+
+
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
