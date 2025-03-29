@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -143,4 +143,138 @@
   }
   
   
- 
+
+}
+
+.background-img {
+  margin-top: 81.99px;
+  position: relative;
+  height: auto;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+  display: block;
+  margin-top: 0px;
+}
+
+.background-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.background-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: adobe-caslon-pro, sans-serif;
+  margin-right: 0px;
+}
+
+
+.product-spacerow {
+  width: 100%;
+  padding-left: 34px;
+  margin-bottom: 5px;
+}
+
+.product1-name,
+.product2-name,
+.product4-name,
+.product5-name,
+.product6-name {
+  font-size: 17px;
+  margin: auto;
+  font-weight: 500;
+  line-height: 20px;
+  color: black;
+  padding-left: 0px;
+  margin-left: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.product3-name {
+  font-size: 17px;
+  margin: auto;
+  font-weight: 500;
+  line-height: 20px;
+  color: black;
+  padding-left: 0px;
+  margin-left: 140px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+}
+
+.product4-name {
+  padding-left: 50px;
+}
+
+
+.product-4 {
+  padding-left: 165px;
+}
+
+.product-6 {
+  width: 1000px;
+}
+
+.product-price {
+  color: rgb(170, 170, 170);
+  padding-left: 165px;
+}
+
+.product-preview {
+  width: 400px;
+  display: inline-block;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-1,
+.product-2,
+.product-3,
+.product-4,
+.product-5,
+.product-6 {
+  padding-left: 0px;
+  width: 400px;
+  padding-right: 40px;
+  margin-right: 0%;
+}
+
+.product-info p {
+  width: 100%;
+  margin-left: 0px;
+  padding-left: 5px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 40px;
+
+}
+
+.product-grid .product-spacerow {
+  padding-left: 70px;
+}
+
+.product-price {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+

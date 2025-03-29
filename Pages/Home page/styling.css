@@ -10,6 +10,8 @@
 }
 
 
+
+
 .video-container {
     position: absolute;
     top: 0;
@@ -42,9 +44,14 @@
     border-top: 5px;
     border-right: 5px;
     border-color: rgba(186, 149, 125, 0.9);
+
 }
 
 .homepage .navbar:hover {
+    background-color: rgba(186, 149, 125, 0.8);
+}
+
+.homepage .navbar.scrolled {
     background-color: rgba(186, 149, 125, 0.8);
 }
 
@@ -132,8 +139,6 @@
     padding-right: 40px;
     margin-right: 40px;
 }
-
-
 
 
 
