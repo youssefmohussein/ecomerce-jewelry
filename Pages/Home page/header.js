@@ -40,4 +40,73 @@ document.addEventListener("DOMContentLoaded", function () {
             }, 300);
         });
     });
+
+    document.getElementById("footer").innerHTML = `
+                <footer class="footer">
+        <!-- Heritage Section -->
+        <div class="heritage">
+            <div class="logo">✦</div>
+            <h2 class="brand">VITA</h2>
+            <p class="tagline">PARIS • 1888</p>
+            <div class="separator">
+                <span>◆</span>
+            </div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../products-page/earings-page.html">Earrings</a></li>
+                    <li><a href="../products-page/ring-page.html">Rings</a></li>
+                    <li><a href="../products-page/bracelets-page.html">Bracalet</a></li>
+                    <li><a href="../products-page/necklace-page.html">Necklace</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="contact-info">
+                    <li>13 Place Vendôme</li>
+                    <li>75001 Paris, France</li>
+                    <li>+33 1 42 61 58 58</li>
+                    <li>contact@maisonlumiere.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Refubd-Policy</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Contact-US</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to receive our latest collections and private events.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Pinterest</a>
+            </div>
+            <div class="copyright">
+                © 2024 VITA. All rights reserved.
+            </div>
+
+        </div>
+    </footer>`;
 });
