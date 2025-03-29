@@ -89,7 +89,13 @@
   .product-price {
     color: rgb(170, 170, 170);
     padding-left: 165px;
+    text-decoration: none;
   }
+
+  .product-price:hover {
+    box-shadow: none; 
+  }
+  
   
   .product-preview {
     width: 400px;
@@ -135,5 +141,6 @@
   .product-price{
     position: relative;
   }
+  
   
  
