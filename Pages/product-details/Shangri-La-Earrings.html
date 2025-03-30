@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="../product-details/styling-details.css">
     <script src="../Home page/header.js" defer></script>
+    <script src="../product-details/productdetails.js"></script>
+
 
 </head>
 
@@ -27,12 +29,20 @@
                 <span class="color-swatch green" data-color="green"></span>
                 <span class="color-swatch black" data-color="black"></span>
             </div> -->
-        
+
             <br>
             <button id="addToCart" onclick="toggleDetails()">Add to Cart</button>
+            <br><br>
+            <div class="quantity-container">
+                <button class="quantity-btn decrease-btn">-</button>
+                <input type="number" class="quantity-input" value="0" min="0">
+                <button class="quantity-btn increase-btn">+</button>
+            </div>
             <details>
                 <summary>Details</summary>
-                <p>Inspired by the beauty and mystique of paradise, the Shangri-La Earrings are a true statement of elegance and luxury. Designed for those who appreciate fine craftsmanship, these earrings blend timeless charm with modern sophistication.</p>
+                <p>Inspired by the beauty and mystique of paradise, the Shangri-La Earrings are a true statement of
+                    elegance and luxury. Designed for those who appreciate fine craftsmanship, these earrings blend
+                    timeless charm with modern sophistication.</p>
             </details>
             <details>
                 <summary>Shipping and Returns</summary>
@@ -43,7 +53,7 @@
             </details>
         </div>
     </section>
-  
+    <div id="footer"></div>
 </body>
 
 </html>
