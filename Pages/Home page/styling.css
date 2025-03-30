@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Delius&family=Delius+Swash+Caps&family=Gravitas+One&family=Lavishly+Yours&family=Markazi+Text:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pattaya&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Vibur&display=swap');
 
 * {
     font-family: sans-serif;
@@ -44,32 +43,33 @@
     border-width: 1px;
     border-top: 5px;
     border-right: 5px;
-    border-color: black;
+    border-color: white;
 
 }
 
 .homepage .navbar:hover {
-    background-color: black;
+    background-color: white;
 }
 
 .homepage .navbar.scrolled {
-    background-color: black;
+    background-color: white;
 }
 
 .navigation a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
     text-decoration: none;
     padding-right: 30px;
-    color: whitesmoke;
+    color: black;
     font-size: 20px;
 }
 
 .logo h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
     font-size: 30px;
-    color: whitesmoke;
+    color: black;
 }
 
 .logo {
@@ -79,7 +79,7 @@
 .icons a {
     padding-left: 30px;
     font-size: 25px;
-    color: whitesmoke;
+    color: black;
 }
 
 .content {
@@ -121,13 +121,22 @@
 
 }
 
+.Explore {
+    font-family: 'Adobe Caslon Pro';
+    font-size: 40px;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    font-weight: 10%;
+}
+
 /* Container for each product */
 .product-item1,
 .product-item2,
 .product-item3,
 .product-item4 {
     padding-left: 10px;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 /* Image styling */
@@ -136,9 +145,9 @@
 .image-3,
 .image-4 {
     padding-left: 20px;
-    width: 300px;
+    width: 320px;
     padding-right: 40px;
-    margin-right: 40px;
+    margin-right: 20px;
     transition: transform 0.3s ease;
 
 }
@@ -157,12 +166,15 @@
 .product-title2,
 .product-title3,
 .product-title4 {
-    font-size: 15px;
+    font-size: 12px;
     color: black;
     margin: auto;
-    padding-right: 61px;
+    padding-right: 35px;
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
 
 }
 
@@ -346,21 +358,21 @@
 
 
 /* Container */
-.container-workshop  {
+.container-workshop {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-  
-  
-  /* About Section */
-  .workshop-content {
+}
+
+
+/* About Section */
+.workshop-content {
     padding: 80px 0;
-  }
-  
-  
-  /* Headings */
-  .container-workshop h1 {
+}
+
+
+/* Headings */
+.container-workshop h1 {
     font-size: 40px;
     font-weight: 300;
     text-align: center;
@@ -368,8 +380,9 @@
     margin-bottom: -20px;
     color: black;
     font-family: 'Laslo-Regular';
-  }
-  .container-workshop p {
+}
+
+.container-workshop p {
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: 18px;
@@ -377,10 +390,10 @@
     font-style: italic;
     font-family: 'Laslo-Regular';
 
-  }
-  
-  
-  .workshop-text  h2 {
+}
+
+
+.workshop-text h2 {
     font-size: 1.8rem;
     font-weight: 300;
     margin-top: 50px;
@@ -388,46 +401,47 @@
     color: black;
     text-align: left;
     font-family: 'Laslo-Regular';
-    
-  }
-  
-  .workshop-text p {
+
+}
+
+.workshop-text p {
     margin-top: 40px;
     margin-bottom: 80px;
     font-size: 18px;
-    text-align:left ;
+    text-align: left;
     font-style: italic;
     font-family: 'Laslo-Regular';
-  }
-  
-  
-  .workshop-content {
+}
+
+
+.workshop-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin: 60px 0;
-  }
-  
-  /* Image Styling */
-  .workshop-img {
+}
+
+/* Image Styling */
+.workshop-img {
     width: 600px;
     height: 500px;
     object-fit: cover;
-  }
-  .workshop-text1 p{
+}
+
+.workshop-text1 p {
     margin-top: 40px;
     margin-bottom: 80px;
     font-size: 18px;
     padding-left: 100px;
     padding-right: 50px;
-    text-align:left ;
+    text-align: left;
     font-style: italic;
     font-family: 'Laslo-Regular';
-     
-  }
+
+}
 
 
-  .workshop-text1 h2{
+.workshop-text1 h2 {
     font-size: 1.8rem;
     font-weight: 300;
     margin-top: 50px;
@@ -435,14 +449,14 @@
     color: black;
     text-align: center;
     font-family: 'Laslo-Regular';
-     
-  }
 
-  @font-face {
+}
+
+@font-face {
     font-family: 'Laslo-Light';
     src: url('fonts/Laslo-Light.woff2') format('woff2'),
-         url('fonts/Laslo-Light.woff') format('woff'),
-         url('fonts/Laslo-Light.ttf') format('truetype');
+        url('fonts/Laslo-Light.woff') format('woff'),
+        url('fonts/Laslo-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
@@ -450,18 +464,19 @@
 @font-face {
     font-family: 'Laslo-Regular';
     src: url('fonts/Laslo-Regular.woff2') format('woff2'),
-         url('fonts/Laslo-Regular.woff') format('woff'),
-         url('fonts/Laslo-Regular.ttf') format('truetype');
+        url('fonts/Laslo-Regular.woff') format('woff'),
+        url('fonts/Laslo-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "SAOLDISPLAY-MEDIUM";
     src: url("path/to/SAOLDISPLAY-MEDIUM.woff2") format("woff2"),
-         url("path/to/SAOLDISPLAY-MEDIUM.woff") format("woff");
+        url("path/to/SAOLDISPLAY-MEDIUM.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 
 
