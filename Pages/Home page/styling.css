@@ -281,9 +281,9 @@
 .heading-text {
     margin-bottom: 20px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: lighter;
     font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Laslo-Regular';
 }
 
 .images {
@@ -354,49 +354,128 @@
 }
 
 
-
-
-
-
 /* qoute section malak */
-.quote-section1 {
+
+
+/* Container */
+.container-workshop  {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  
+  /* About Section */
+  .workshop-content {
+    padding: 80px 0;
+  }
+  
+  
+  /* Headings */
+  .container-workshop h1 {
+    font-size: 40px;
+    font-weight: 300;
     text-align: center;
-    padding-top: 20px;
-
-}
-
-.heading-between-qoutes {
-    font-size: 60%;
-    font-weight: bold;
-    margin-bottom: 5px;
-
-}
-
-.content1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
-
-}
-
-
-.quote-image1 {
-
-    width: 450px;
-    height: 400px;
-    margin-right: 20px;
-    object-fit: cover;
-    margin-left: 10%;
-}
-
-
-.quote-text1 {
-    font-size: 60%;
+    margin-top: 40px;
+    margin-bottom: -20px;
+    color: black;
+    font-family: 'Laslo-Regular';
+  }
+  .container-workshop p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
     font-style: italic;
-    max-width: 40%;
-    text-align: right;
+    font-family: 'Laslo-Regular';
+
+  }
+  
+  
+  .workshop-text  h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: left;
+    font-family: 'Laslo-Regular';
+    
+  }
+  
+  .workshop-text p {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-size: 18px;
+    text-align:left ;
+    font-style: italic;
+    font-family: 'Laslo-Regular';
+  }
+  
+  
+  .workshop-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 60px 0;
+  }
+  
+  /* Image Styling */
+  .workshop-img {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+  }
+  .workshop-text1 p{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-size: 18px;
+    padding-left: 100px;
+    padding-right: 50px;
+    text-align:left ;
+    font-style: italic;
+    font-family: 'Laslo-Regular';
+     
+  }
+
+
+  .workshop-text1 h2{
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+    font-family: 'Laslo-Regular';
+     
+  }
+
+  @font-face {
+    font-family: 'Laslo-Light';
+    src: url('fonts/Laslo-Light.woff2') format('woff2'),
+         url('fonts/Laslo-Light.woff') format('woff'),
+         url('fonts/Laslo-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Laslo-Regular';
+    src: url('fonts/Laslo-Regular.woff2') format('woff2'),
+         url('fonts/Laslo-Regular.woff') format('woff'),
+         url('fonts/Laslo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "SAOLDISPLAY-MEDIUM";
+    src: url("path/to/SAOLDISPLAY-MEDIUM.woff2") format("woff2"),
+         url("path/to/SAOLDISPLAY-MEDIUM.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
 
 
 
