@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const colorSwatches = document.querySelectorAll(".color-swatch");
 
     const imagePaths = {
-        "gold": "../Home page/home-images/rings/gold.png",
-        "green": "../Home page/home-images/rings/darkgreen.png",
-        "black": "../Home page/home-images/rings/black.png"
+        "white": "../images/rings-page/Small Oval Buckle Ring white.webp",
+        "green": "../images/rings-page/Small Oval Buckle Ring.webp",
+        "black": "../images/rings-page/Small Oval Buckle Ring, Black.webp"
     };
 
     colorSwatches.forEach(swatch => {
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="footer-section">
                 <h3>Services</h3>
                 <ul>
-                    <li><a href="#">Refund-Policy</a></li>
+                    <li><a href="../refund policy/refundpolicy.html">Refund-Policy</a></li>
                     <li><a href="#">Shipping</a></li>
                     <li><a href="../contact us/contactus.html">Contact-US</a></li>
                     <li><a href="../faq/faq.html">FAQ</a></li>

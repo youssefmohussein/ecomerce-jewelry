@@ -22,7 +22,8 @@
     border-width: 1px;
     border-top: 5px;
     border-right: 5px;
-    border-color: rgba(186, 149, 125, 0.9);
+    border-color: black;
+
 }
 
 
@@ -30,7 +31,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     padding-right: 30px;
-    color: black;
+    color: white;
     font-size: 20px;
 }
 
@@ -39,7 +40,7 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 30px;
-    color: black;
+    color: white;
 }
 
 .logo {
@@ -49,30 +50,27 @@
 .icons a {
     padding-left: 30px;
     font-size: 25px;
-    color: black;
+    color: white;
 }
 
 /* Headeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
 
 .add-to-cart,
 button {
-    background-color: rgba(186, 149, 125, 0.8);
-    color: black;
+    background-color: black;
+    color: white;
     width: 300px;
     height: 45px;
     font-size: 19px;
     border: #8C6F54
 }
 
-.add-to-cart:hover {
-    box-shadow: 5px 5px 25px rgba(186, 149, 125, 0.8);
 
-}
 
 
 /* yousssef rings */
 .rings .navbar {
-    background-color: rgba(186, 149, 125, 0.9);
+    background-color: black;
     z-index: 1000;
 
 }
@@ -82,7 +80,7 @@ button {
     align-items: center;
     justify-content: center;
     gap: 150px;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 200px;
 }
 
@@ -184,10 +182,14 @@ details[open] {
     border-radius: 50%;
     border: 2px solid transparent;
     transition: 0.3s;
+    border: black;
+    border-style: solid;
+    border-radius: 0px;
 }
 
-.gold {
-    background: gold;
+.white {
+    background: white;
+
 }
 
 .green {
@@ -220,7 +222,7 @@ details[open] {
     align-items: center;
     justify-content: center;
     gap: 150px;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 200px;
 }
 
@@ -324,7 +326,7 @@ details[open] {
     align-items: center;
     justify-content: center;
     gap: 150px;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 200px;
 }
 
@@ -414,7 +416,7 @@ details[open] {
     align-items: center;
     justify-content: center;
     gap: 150px;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 200px;
 }
 
@@ -504,7 +506,7 @@ details[open] {
     align-items: center;
     justify-content: center;
     gap: 150px;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 200px;
 }
 
@@ -594,7 +596,7 @@ details[open] {
     align-items: center;
     justify-content: center;
     gap: 150px;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 200px;
 }
 
@@ -774,7 +776,7 @@ details[open] {
     align-items: center;
     justify-content: center;
     gap: 150px;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 200px;
 }
 
@@ -865,7 +867,7 @@ details[open] {
     align-items: center;
     justify-content: center;
     gap: 150px;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 200px;
 }
 
