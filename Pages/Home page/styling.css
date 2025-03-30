@@ -44,23 +44,23 @@
     border-width: 1px;
     border-top: 5px;
     border-right: 5px;
-    border-color: rgba(186, 149, 125, 0.9);
+    border-color: black;
 
 }
 
 .homepage .navbar:hover {
-    background-color: rgba(186, 149, 125, 0.8);
+    background-color: black;
 }
 
 .homepage .navbar.scrolled {
-    background-color: rgba(186, 149, 125, 0.8);
+    background-color: black;
 }
 
 .navigation a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     padding-right: 30px;
-    color: black;
+    color: whitesmoke;
     font-size: 20px;
 }
 
@@ -69,7 +69,7 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 30px;
-    color: black;
+    color: whitesmoke;
 }
 
 .logo {
@@ -79,7 +79,7 @@
 .icons a {
     padding-left: 30px;
     font-size: 25px;
-    color: black;
+    color: whitesmoke;
 }
 
 .content {
@@ -142,9 +142,13 @@
     transition: transform 0.3s ease;
 
 }
-.image-1:hover ,.image-2:hover ,.image-3:hover , .image-4:hover {
+
+.image-1:hover,
+.image-2:hover,
+.image-3:hover,
+.image-4:hover {
     transform: scale(1.1);
-  }
+}
 
 
 
@@ -256,30 +260,32 @@
 
 
 /* model section*/
-.model-content{
-    text-align: center; 
+.model-content {
+    text-align: center;
     gap: 30px;
 
 }
-.heading-text{
-  margin-bottom: 20px;
-  font-size: 20px;    
-  font-weight: bold;
- font-style: italic;
- font-family: Arial, Helvetica, sans-serif;
+
+.heading-text {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 .images {
-    display: flex;         
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     gap: 30px;
-                 
-  }
-  
-  .images img {
-    width: 560px; 
+
+}
+
+.images img {
+    width: 560px;
     height: 560px;
-    
-  }
+
+}
 
 
 
@@ -342,41 +348,43 @@
 
 /* qoute section malak */
 .quote-section1 {
-    text-align: center;           
-    padding-top: 20px; 
-        
-  }
-  .heading-between-qoutes{
-    font-size: 60%;             
-    font-weight: bold;           
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.heading-between-qoutes {
+    font-size: 60%;
+    font-weight: bold;
     margin-bottom: 5px;
-  
-  }
-  .content1 {
-    display: flex;                
-    align-items: center;         
+
+}
+
+.content1 {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    padding-top: 20px;  
-     
-  }
-  
+    padding-top: 20px;
 
-  .quote-image1 {
+}
 
-    width: 450px;                  
-    height: 400px;                 
-    margin-right: 20px;           
-    object-fit: cover;            
-    margin-left: 10%;           
-  }
-  
 
-  .quote-text1 {
-    font-size: 60%;           
-    font-style: italic;          
-    max-width: 40%;               
-    text-align: right;            
-  }
+.quote-image1 {
+
+    width: 450px;
+    height: 400px;
+    margin-right: 20px;
+    object-fit: cover;
+    margin-left: 10%;
+}
+
+
+.quote-text1 {
+    font-size: 60%;
+    font-style: italic;
+    max-width: 40%;
+    text-align: right;
+}
 
 
 
@@ -400,7 +408,7 @@ footer {
 
 .heritage .logo {
     font-size: 36px;
-    color: #D4B78F;
+    color: white;
 }
 
 .brand {
@@ -412,11 +420,11 @@ footer {
 .tagline {
     font-size: 14px;
     letter-spacing: 4px;
-    color: #D4B78F;
+    color: white;
 }
 
 .separator span {
-    color: #D4B78F;
+    color: white;
     font-size: 12px;
     display: inline-block;
     position: relative;
@@ -430,7 +438,7 @@ footer {
     top: 50%;
     width: 100px;
     height: 1px;
-    background: #D4B78F;
+    background: white;
 }
 
 .separator span::before {
@@ -472,7 +480,7 @@ footer {
 }
 
 .footer-section a:hover {
-    color: #D4B78F;
+    color: white;
 }
 
 .newsletter-form input,
@@ -480,20 +488,20 @@ footer {
     width: 100%;
     padding: 12px;
     font-family: inherit;
-    border: 1px solid #D4B78F;
+    border: 1px solid white;
     background: transparent;
-    color: #F5F1EA;
+    color: black;
 }
 
 .newsletter-form button {
-    background: #D4B78F;
+    background: white;
     border: none;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .newsletter-form button:hover {
-    background: #C4A77F;
+    background: white;
 }
 
 .footer-bottom {
@@ -516,11 +524,6 @@ footer {
     font-size: 14px;
     letter-spacing: 1px;
     transition: 0.3s;
-}
-
-.social-links a:hover,
-.legal-links a:hover {
-    color: #D4B78F;
 }
 
 .copyright {

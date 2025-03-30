@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const colorSwatches = document.querySelectorAll(".color-swatch");
 
     const imagePaths = {
-        "gold": "../Home page/home-images/rings/gold.png",
-        "green": "../Home page/home-images/rings/darkgreen.png",
-        "black": "../Home page/home-images/rings/black.png"
+        "white": "../images/rings-page/Small Oval Buckle Ring white.webp",
+        "green": "../images/rings-page/Small Oval Buckle Ring.webp",
+        "black": "../images/rings-page/Small Oval Buckle Ring, Black.webp"
     };
 
     colorSwatches.forEach(swatch => {
