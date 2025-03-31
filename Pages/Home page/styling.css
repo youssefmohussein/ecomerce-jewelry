@@ -94,7 +94,7 @@
 }
 
 .logo h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'SAOLDISPLAY-MEDIUM';
     font-weight: lighter;
     /* Slightly bolder for impact */
     text-align: center;
@@ -115,7 +115,7 @@
 .icons a {
     padding-left: 30px;
     font-size: 25px;
-    color: #b76e79;
+    color: rgb(45, 41, 41);
 }
 
 .content {
@@ -192,7 +192,17 @@
 }
 
 
-
+.image-1:hover,
+.image-2:hover,
+.image-3:hover,
+.image-4:hover {
+    transform: scale(1.08);
+    /* Slight zoom */
+    opacity: 0.9;
+    /* Soft fade effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    /* Elegant lift effect */
+}
 
 
 /* Title for the product (below the image) */

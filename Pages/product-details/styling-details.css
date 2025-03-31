@@ -8,56 +8,13 @@
 
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 23px 40px;
-    justify-content: space-between;
-    transition: background-color .5s ease-in-out;
-    border-style: outset;
-    border-width: 1px;
-    border-top: 5px;
-    border-right: 5px;
-    border-color: black;
 
-}
-
-
-.navigation a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    padding-right: 30px;
-    color: white;
-    font-size: 20px;
-}
-
-.logo h1 {
-    font-family: 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-}
-
-.logo {
-    text-decoration: none;
-}
-
-.icons a {
-    padding-left: 30px;
-    font-size: 25px;
-    color: white;
-}
 
 /* Headeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
 
 .add-to-cart,
 button {
-    background-color: black;
+    background-color: #b76e79;
     color: white;
     width: 300px;
     height: 45px;
@@ -69,7 +26,7 @@ button {
 
 
 /* yousssef rings */
-.rings .navbar {
+.rings {
     background-color: black;
     z-index: 1000;
 
@@ -115,6 +72,8 @@ button {
 }
 
 .pdetails h2 {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    color: rgb(45, 41, 41);
     font-size: 28px;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -124,6 +83,7 @@ button {
     font-size: 18px;
     margin-bottom: 10px;
     padding-bottom: 20px;
+    color: rgb(45, 41, 41);
 }
 
 /* button {
@@ -137,6 +97,7 @@ button {
 
 .pdetails details {
     padding-top: 20px;
+    color: rgb(45, 41, 41);
 }
 
 
@@ -212,7 +173,7 @@ details[open] {
 
 
 .earings .navbar {
-    background-color: rgba(186, 149, 125, 0.9);
+
     z-index: 1000;
 
 }
@@ -316,7 +277,7 @@ details[open] {
 
 
 .bracelet .navbar {
-    background-color: rgba(186, 149, 125, 0.9);
+    background-color: white;
     z-index: 1000;
 
 }
@@ -359,6 +320,7 @@ details[open] {
     font-size: 28px;
     margin-bottom: 20px;
     padding-bottom: 20px;
+
 }
 
 .pdetails p {
@@ -502,6 +464,7 @@ details[open] {
 }
 
 .Product {
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -536,6 +499,8 @@ details[open] {
 }
 
 .pdetails h2 {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    color: rgb(45, 41, 41);
     font-size: 28px;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -625,6 +590,8 @@ details[open] {
 }
 
 .pdetails h2 {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    color: rgb(45, 41, 41);
     font-size: 28px;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -715,6 +682,8 @@ details[open] {
 }
 
 .pdetails h2 {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    color: rgb(45, 41, 41);
     font-size: 28px;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -805,6 +774,8 @@ details[open] {
 }
 
 .pdetails h2 {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    color: rgb(45, 41, 41);
     font-size: 28px;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -857,12 +828,14 @@ details[open] {
 
 
 .necklace .navbar {
-    background-color: rgba(186, 149, 125, 0.9);
+    background-color: white;
     z-index: 1000;
 
 }
 
 .Product {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    color: rgb(45, 41, 41);
     display: flex;
     align-items: center;
     justify-content: center;
