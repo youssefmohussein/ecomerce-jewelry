@@ -63,7 +63,7 @@
     /* Matches logo */
     text-decoration: none;
     padding: 10px 20px;
-    color: #1d1c1c;
+    color: #b76e79;
     /* Deep black for elegance */
     font-size: 18px;
     font-weight: 500;
@@ -85,12 +85,12 @@
     /* Slightly larger for luxury feel */
     letter-spacing: 4px;
     /* Elegant spacing */
-    color: #1d1c1c;
-    /* Deep black for contrast */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     /* Soft glow effect */
     word-spacing: 10px;
     padding-right: 35px;
+    color: #b76e79;
+    /* Deep black for contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .logo h2 {
@@ -102,7 +102,7 @@
     /* Slightly larger for luxury feel */
     letter-spacing: 2px;
     /* Elegant spacing */
-    color: #1d1c1c;
+    color: #b76e79;
     /* Deep black for contrast */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     padding-right: 5px;
@@ -115,7 +115,7 @@
 .icons a {
     padding-left: 30px;
     font-size: 25px;
-    color: black;
+    color: #b76e79;
 }
 
 .content {
@@ -149,7 +149,7 @@
 .section-best-seller {
     font-size: 35px;
     font-weight: bold;
-    color: black;
+    color: #b76e79;
     margin-bottom: 20px;
     text-align: center;
     font-family: serif;
@@ -166,7 +166,7 @@
     padding-bottom: 45px;
     font-weight: 500;
     letter-spacing: 1.5px;
-    color: #1a1a1a;
+    color: #b76e79;
     PADDING-LEFT: 37PX;
 }
 
@@ -191,17 +191,7 @@
     transition: transform 0.4s ease-out, opacity 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
-.image-1:hover,
-.image-2:hover,
-.image-3:hover,
-.image-4:hover {
-    transform: scale(1.08);
-    /* Slight zoom */
-    opacity: 0.9;
-    /* Soft fade effect */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
-    /* Elegant lift effect */
-}
+
 
 
 
@@ -211,7 +201,7 @@
 .product-title3,
 .product-title4 {
     font-size: 12px;
-    color: black;
+    color: #b76e79;
     margin: auto;
     padding-right: 35px;
     text-align: center;
@@ -546,7 +536,7 @@ footer {
 
 .heritage .logo {
     font-size: 36px;
-    color: white;
+    color: #b55f6c;
 }
 
 .brand {
@@ -562,7 +552,7 @@ footer {
 }
 
 .separator span {
-    color: white;
+    color: #b76e79;
     font-size: 12px;
     display: inline-block;
     position: relative;
@@ -576,7 +566,7 @@ footer {
     top: 50%;
     width: 100px;
     height: 1px;
-    background: white;
+    background: #b76e79;
 }
 
 .separator span::before {
@@ -618,7 +608,7 @@ footer {
 }
 
 .footer-section a:hover {
-    color: white;
+    color: #b76e79;
 }
 
 .newsletter-form input,
@@ -626,20 +616,20 @@ footer {
     width: 100%;
     padding: 12px;
     font-family: inherit;
-    border: 1px solid white;
+    border: 1px solid #b76e79;
     background: transparent;
-    color: black;
+    color: white;
 }
 
 .newsletter-form button {
-    background: white;
+    background: #b76e79;
     border: none;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .newsletter-form button:hover {
-    background: white;
+    background: #b76e79;
 }
 
 .footer-bottom {
@@ -666,5 +656,5 @@ footer {
 
 .copyright {
     font-size: 14px;
-    color: rgba(245, 241, 234, 0.8);
+    color: white;
 }
