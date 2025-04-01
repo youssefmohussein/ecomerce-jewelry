@@ -104,7 +104,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-     text-align: center;
+    text-align: center;
   }
   
   .product-1,
@@ -143,8 +143,6 @@
   }
   
   
-
-}
 
 .background-img {
   margin-top: 81.99px;
