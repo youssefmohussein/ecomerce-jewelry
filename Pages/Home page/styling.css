@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Delius&family=Delius+Swash+Caps&family=Gravitas+One&family=Lavishly+Yours&family=Markazi+Text:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pattaya&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Vibur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
 * {
     font-family: sans-serif;
@@ -43,32 +46,66 @@
     border-width: 1px;
     border-top: 5px;
     border-right: 5px;
-    border-color: rgba(186, 149, 125, 0.9);
+    border-color: white;
 
 }
 
 .homepage .navbar:hover {
-    background-color: rgba(186, 149, 125, 0.8);
+    background-color: white;
 }
 
 .homepage .navbar.scrolled {
-    background-color: rgba(186, 149, 125, 0.8);
+    background-color: white;
 }
 
 .navigation a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+    /* Matches logo */
     text-decoration: none;
-    padding-right: 30px;
-    color: black;
-    font-size: 20px;
-}
-
-.logo h1 {
-    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    color: #b76e79;
+    /* Deep black for elegance */
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     text-align: center;
-    font-size: 30px;
-    color: black;
+    padding-left: 30px;
+}
+
+
+
+.logo h1 {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    /* Slightly bolder for impact */
+    text-align: center;
+    font-size: 40px;
+    /* Slightly larger for luxury feel */
+    letter-spacing: 4px;
+    /* Elegant spacing */
+    /* Soft glow effect */
+    word-spacing: 10px;
+    padding-right: 35px;
+    color: #b76e79;
+    /* Deep black for contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.logo h2 {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    font-weight: lighter;
+    /* Slightly bolder for impact */
+    text-align: center;
+    font-size: 25px;
+    /* Slightly larger for luxury feel */
+    letter-spacing: 2px;
+    /* Elegant spacing */
+    color: #b76e79;
+    /* Deep black for contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    padding-right: 5px;
 }
 
 .logo {
@@ -78,7 +115,7 @@
 .icons a {
     padding-left: 30px;
     font-size: 25px;
-    color: black;
+    color: rgb(45, 41, 41);
 }
 
 .content {
@@ -112,12 +149,25 @@
 .section-best-seller {
     font-size: 35px;
     font-weight: bold;
-    color: black;
+    color: #b76e79;
     margin-bottom: 20px;
     text-align: center;
     font-family: serif;
     padding: 40px;
 
+}
+
+.Explore {
+    font-family: 'Cormorant Garamond', serif;
+    /* Matches the logo */
+    font-size: 42px;
+
+    padding-top: 50px;
+    padding-bottom: 45px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #b76e79;
+    PADDING-LEFT: 37PX;
 }
 
 /* Container for each product */
@@ -126,7 +176,7 @@
 .product-item3,
 .product-item4 {
     padding-left: 10px;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 /* Image styling */
@@ -135,11 +185,24 @@
 .image-3,
 .image-4 {
     padding-left: 20px;
-    width: 300px;
+    width: 320px;
     padding-right: 40px;
-    margin-right: 40px;
+    margin-right: 20px;
+    transition: transform 0.4s ease-out, opacity 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
+
+.image-1:hover,
+.image-2:hover,
+.image-3:hover,
+.image-4:hover {
+    transform: scale(1.08);
+    /* Slight zoom */
+    opacity: 0.9;
+    /* Soft fade effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    /* Elegant lift effect */
+}
 
 
 /* Title for the product (below the image) */
@@ -147,12 +210,15 @@
 .product-title2,
 .product-title3,
 .product-title4 {
-    font-size: 15px;
-    color: black;
+    font-size: 12px;
+    color: #b76e79;
     margin: auto;
-    padding-right: 61px;
+    padding-right: 35px;
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
 
 }
 
@@ -187,7 +253,7 @@
     padding-left: 25px;
 }
 
-/*    */
+
 .product-image img:hover {
     box-shadow: -10px 10px 25px rgba(186, 149, 125, 0.8);
     transform: scale(1.1);
@@ -246,6 +312,50 @@
 
 
 
+.collection {
+    color: #b76e79;
+    font-size: 50px;
+    font-style: italic;
+    font-family: "SAOLDISPLAY-MEDIUM";
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+
+/* model section*/
+.model-content {
+    text-align: center;
+    gap: 30px;
+
+}
+
+.heading-text {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: 'Laslo-Regular';
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.images img {
+    width: 560px;
+    height: 560px;
+
+}
+
+
+
+
+
+
 
 /* collection */
 
@@ -296,6 +406,130 @@
 }
 
 
+/* qoute section malak */
+
+
+/* Container */
+.container-workshop {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* About Section */
+.workshop-content {
+    padding: 80px 0;
+}
+
+
+/* Headings */
+.container-workshop h1 {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: -20px;
+    color: black;
+    font-family: 'Laslo-Regular';
+}
+
+.container-workshop p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Laslo-Regular';
+
+}
+
+
+.workshop-text h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: left;
+    font-family: 'Laslo-Regular';
+
+}
+
+.workshop-text p {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-size: 18px;
+    text-align: left;
+    font-style: italic;
+    font-family: 'Laslo-Regular';
+}
+
+
+.workshop-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+/* Image Styling */
+.workshop-img {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.workshop-text1 p {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-size: 18px;
+    padding-left: 100px;
+    padding-right: 50px;
+    text-align: left;
+    font-style: italic;
+    font-family: 'Laslo-Regular';
+
+}
+
+
+.workshop-text1 h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+    font-family: 'Laslo-Regular';
+
+}
+
+@font-face {
+    font-family: 'Laslo-Light';
+    src: url('fonts/Laslo-Light.woff2') format('woff2'),
+        url('fonts/Laslo-Light.woff') format('woff'),
+        url('fonts/Laslo-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Laslo-Regular';
+    src: url('fonts/Laslo-Regular.woff2') format('woff2'),
+        url('fonts/Laslo-Regular.woff') format('woff'),
+        url('fonts/Laslo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SAOLDISPLAY-MEDIUM";
+    src: url("path/to/SAOLDISPLAY-MEDIUM.woff2") format("woff2"),
+        url("path/to/SAOLDISPLAY-MEDIUM.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 
@@ -320,7 +554,7 @@ footer {
 
 .heritage .logo {
     font-size: 36px;
-    color: #D4B78F;
+    color: #b55f6c;
 }
 
 .brand {
@@ -332,11 +566,11 @@ footer {
 .tagline {
     font-size: 14px;
     letter-spacing: 4px;
-    color: #D4B78F;
+    color: white;
 }
 
 .separator span {
-    color: #D4B78F;
+    color: #b76e79;
     font-size: 12px;
     display: inline-block;
     position: relative;
@@ -350,7 +584,7 @@ footer {
     top: 50%;
     width: 100px;
     height: 1px;
-    background: #D4B78F;
+    background: #b76e79;
 }
 
 .separator span::before {
@@ -392,7 +626,7 @@ footer {
 }
 
 .footer-section a:hover {
-    color: #D4B78F;
+    color: #b76e79;
 }
 
 .newsletter-form input,
@@ -400,20 +634,20 @@ footer {
     width: 100%;
     padding: 12px;
     font-family: inherit;
-    border: 1px solid #D4B78F;
+    border: 1px solid #b76e79;
     background: transparent;
-    color: #F5F1EA;
+    color: white;
 }
 
 .newsletter-form button {
-    background: #D4B78F;
+    background: #b76e79;
     border: none;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .newsletter-form button:hover {
-    background: #C4A77F;
+    background: #b76e79;
 }
 
 .footer-bottom {
@@ -438,12 +672,7 @@ footer {
     transition: 0.3s;
 }
 
-.social-links a:hover,
-.legal-links a:hover {
-    color: #D4B78F;
-}
-
 .copyright {
     font-size: 14px;
-    color: rgba(245, 241, 234, 0.8);
+    color: white;
 }

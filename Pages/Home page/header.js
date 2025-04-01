@@ -6,12 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 <a href="../About us/about.html">About Us</a>
             </div>
             <a href="../Home page/homepage.html" class="logo">
-                <h1>Vita</h1>
+                <h1>VELORA JEWEL</h1>
+                <h2>Paris</h2>
             </a>
             <div class="icons">
-                <a href="../login page/login page.html"><i class="fa-regular fa-user"></i></a>
+                <a href="../login page/login page.html"><i class="fa-solid fa-user"></i></a>
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
             </div>
         </nav>
     `;
@@ -37,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const colorSwatches = document.querySelectorAll(".color-swatch");
 
     const imagePaths = {
-        "gold": "../Home page/home-images/rings/gold.png",
-        "green": "../Home page/home-images/rings/darkgreen.png",
-        "black": "../Home page/home-images/rings/black.png"
+        "white": "../images/rings-page/Small Oval Buckle Ring white.webp",
+        "green": "../images/rings-page/Small Oval Buckle Ring.webp",
+        "black": "../images/rings-page/Small Oval Buckle Ring, Black.webp"
     };
 
     colorSwatches.forEach(swatch => {
@@ -97,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="footer-section">
                 <h3>Services</h3>
                 <ul>
-                    <li><a href="#">Refund-Policy</a></li>
+                    <li><a href="../refund policy/refundpolicy.html">Refund-Policy</a></li>
                     <li><a href="#">Shipping</a></li>
                     <li><a href="../contact us/contactus.html">Contact-US</a></li>
                     <li><a href="../faq/faq.html">FAQ</a></li>
