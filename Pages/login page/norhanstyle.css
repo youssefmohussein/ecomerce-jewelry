@@ -9,8 +9,8 @@
 }
 
 body {
-
-    background: linear-gradient(to right, #FAE3D9, #C8A27D);
+    /* More subtle gradient with softer colors */
+    background: linear-gradient(to right, #f5efe5, #e6d7c3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,8 @@ body {
 .container {
     background-color: #fff;
     border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    /* Lighter shadow for reduced eye strain */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     position: relative;
     overflow: hidden;
     width: 768px;
@@ -43,7 +44,8 @@ body {
 
 /*Styles links */
 .container a {
-    color: #333;
+    /* Slightly darker for better contrast */
+    color: #555;
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
@@ -51,8 +53,8 @@ body {
 
 /*Styles all buttons inside the form.*/
 .container button {
-    background-color: #8B5E3C;
-    /* Dark Brown */
+    /* Softer brown that's easier on the eyes */
+    background-color: #a08676;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -82,7 +84,8 @@ body {
 
 /*Styles all text fields Name, Email, Password*/
 .container input {
-    background-color: #eee;
+    /* Slightly warmer grey for less eye strain */
+    background-color: #f0eae3;
     border: none;
     margin: 8px 0;
     padding: 10px 15px;
@@ -145,8 +148,8 @@ body {
 }
 
 .toggle {
-    background: linear-gradient(to right, #a67b5b, #8B5E3C);
-    /* Brown Gradient */
+    /* Softer gradient with more muted colors */
+    background: linear-gradient(to right, #b8a090, #897264);
     color: #fff;
     position: relative;
     left: -100%;
@@ -195,6 +198,7 @@ body {
 .reset-container {
     background-color: #fff;
     border-radius: 20px;
+    /* Lighter shadow */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 500px; /* Adjust width to match design */
     max-width: 90%;
@@ -217,8 +221,9 @@ body {
 
 /* Reset Password Subtext */
 .reset-container p {
+    /* Slightly darker text for better readability */
     font-size: 16px;
-    color: #666;
+    color: #555;
     margin-bottom: 20px;
 }
 
@@ -229,7 +234,8 @@ body {
     border: none;
     border-radius: 8px;
     font-size: 14px;
-    background: #f3f3f3;
+    /* Warmer background color */
+    background: #f0eae3;
     outline: none;
     text-align: center;
     margin-bottom: 15px;
@@ -239,7 +245,8 @@ body {
 .reset-container button {
     width: 100%;
     padding: 12px;
-    background: #8B5E3C;
+    /* Softer brown */
+    background: #a08676;
     color: white;
     font-size: 14px;
     font-weight: 600;
@@ -252,12 +259,14 @@ body {
 
 /* Button Hover Effect */
 .reset-container button:hover {
-    background: #6f4830;
+    /* Slightly darker but still soft */
+    background: #8a7363;
 }
 
 /* Centering Reset Password Page */
 body.reset {
-    background: linear-gradient(to right, #FAE3D9, #C8A27D);
+    /* Matching the main body gradient */
+    background: linear-gradient(to right, #f5efe5, #e6d7c3);
     display: flex;
     align-items: center;
     justify-content: center;
