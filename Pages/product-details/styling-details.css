@@ -48,7 +48,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding-top: 80px;
 }
 
 .product-ring-image img {
@@ -56,8 +56,6 @@ button {
     display: block;
     position: relative;
     top: -100px;
-
-
     /* border-style: solid;
     border-radius: 20%;
     border-width: 5px;
@@ -550,7 +548,7 @@ details[open] {
 /*malak styling  "Open-Frame-Diamond-Bracelet"*/
 
 
-  .Open-Frame-Diamond-Bracelet .navbar {
+.Open-Frame-Diamond-Bracelet .navbar {
     background-color: rgba(186, 149, 125, 0.9);
     z-index: 1000;
 
@@ -566,7 +564,7 @@ details[open] {
 }
 
 
- .product-Open-Frame-Diamond-Bracelet-image{
+.product-Open-Frame-Diamond-Bracelet-image {
     width: 30%;
     display: flex;
     justify-content: center;
@@ -574,7 +572,7 @@ details[open] {
 
 }
 
- .product-Open-Frame-Diamond-Bracelet-image img {
+.product-Open-Frame-Diamond-Bracelet-image img {
     width: 150%;
     display: block;
     position: relative;
@@ -658,7 +656,7 @@ details[open] {
 }
 
 
- .Bent-Nail-Link-Bracelet-image{
+.Bent-Nail-Link-Bracelet-image {
     width: 30%;
     display: flex;
     justify-content: center;
@@ -666,7 +664,7 @@ details[open] {
 
 }
 
- .Bent-Nail-Link-Bracelet-image img {
+.Bent-Nail-Link-Bracelet-image img {
     width: 150%;
     display: block;
     position: relative;
@@ -750,7 +748,7 @@ details[open] {
 }
 
 
- .product-Park-Avenue-Deco-Bangle-image{
+.product-Park-Avenue-Deco-Bangle-image {
     width: 30%;
     display: flex;
     justify-content: center;
@@ -758,7 +756,7 @@ details[open] {
 
 }
 
- .product-Park-Avenue-Deco-Bangle-image img {
+.product-Park-Avenue-Deco-Bangle-image img {
     width: 150%;
     display: block;
     position: relative;
@@ -830,7 +828,6 @@ details[open] {
 .necklace .navbar {
     background-color: white;
     z-index: 1000;
-
 }
 
 .Product {
@@ -946,7 +943,8 @@ details[open] {
         max-height: 200px;
         opacity: 1;
     }
-} 
+}
+
 .quantity-container {
     display: flex;
     align-items: center;

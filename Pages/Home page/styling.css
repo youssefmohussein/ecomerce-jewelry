@@ -312,7 +312,15 @@
 
 
 
-
+.collection {
+    color: #b76e79;
+    font-size: 50px;
+    font-style: italic;
+    font-family: "SAOLDISPLAY-MEDIUM";
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
 
 
 /* model section*/

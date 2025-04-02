@@ -4,27 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add to cart</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="../Home page/styling.css">
+    <link rel="stylesheet" href="Add-to-cart.css">
     <link rel="stylesheet" href="../Home page/styling.css">
     <script src="../Home page/header.js" defer></script>
+    <script src="Add-to-cart.js" defer></script>
+    <title>Add to Cart</title>
 </head>
+
 <body>
+
+    <div id="header"></div>
+
     <div class="wrapper">
-        <h1>Add to cart</h1>
+        <h2>Add to cart</h2>
         <div class="project">
             <div class="add">
                 <div class="box">
-                    <img src="earrings1.png" alt="">
-                    <div class="content">
-                        <h3>Product: Double Crescent Pear Drop Earrings, Azurmalachite</h3>
-                        <h4>Price: LE 2,918,933.00</h4>
-                        <p class="unit">Item: <input value="2"></p>
-                        
+                    <img id="productImage" src="../images/earrings-page/earrings1.png" alt="Product Image">
+                    <div class="container">
+                        <p class="product-info">
+                        <p class="product1-name">Product: Double Crescent Pear Drop Earrings, Azurmalachite</p>
+                        <p class="product-price">Price: LE 2,918,933.00</p>
+                        <p class="unit">Item: <input type="number" value="1"></p>
+                        <p class="btn-area">
+                            <i class="fa fa-trash"></i>
+                            <span class="btn2">remove</span>
+                        </p>
                     </div>
                 </div>
+
+                <div class="box">
+                    <img id="productImage" src="../images/earrings-page/earrings2.png" alt="Product Image">
+                    <div class="container">
+                        <p class="product-info"> 
+                        <p class="product1-name">Product: Oval Link Earrings, Hammered Gold</p>                      
+                        <p class="product-price">Price: LE 1,351,813.00</p>
+                        <p class="unit">Item: <input type="number" value="0"></p>
+                        <p class="btn-area">
+                            <i class="fa fa-trash"></i>
+                            <span class="btn2">remove</span>
+                        </p>
+                    </div>
+                </div>
+
             </div>
+
+            <div class="right-bar">
+                <p><span>Subtotal: </span> <span>LE 4,000,000.00</span></p>
+                <hr>
+                <p><span>Tax (15%): </span> <span>LE 70,000.00</span></p>
+                <hr>
+                <p><span>Shipping: </span> <span>LE 5,000.00</span></p>
+                <hr>
+                <p><span>Total: </span> <span>LE 5,243,211.00</span></p>
+
+                <a href="#"><i class="fa fa-shopping-cart"></i> CheckOut</a>
+            </div>
+
         </div>
     </div>
 
