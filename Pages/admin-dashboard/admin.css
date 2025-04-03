@@ -145,6 +145,15 @@
     border-radius: 4px;
     
 }
+a {
+  text-decoration: none; 
+  color: white;         
+  cursor: pointer;       
+}
+
+a:hover {
+  color:#6a5acd  ;        
+}
 
 /*.search-container button {
   padding: 8px 12px;
