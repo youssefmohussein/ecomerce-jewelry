@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Delius&family=Delius+Swash+Caps&family=Gravitas+One&family=Lavishly+Yours&family=Markazi+Text:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pattaya&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Vibur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
 * {
     font-family: sans-serif;
@@ -56,20 +59,53 @@
 }
 
 .navigation a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    /* Matches logo */
     text-decoration: none;
-    padding-right: 30px;
-    color: black;
-    font-size: 20px;
-}
-
-.logo h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 20px;
+    color: #b76e79;
+    /* Deep black for elegance */
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     text-align: center;
-    font-size: 30px;
-    color: black;
+    padding-left: 30px;
+}
+
+
+
+.logo h1 {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    /* Slightly bolder for impact */
+    text-align: center;
+    font-size: 40px;
+    /* Slightly larger for luxury feel */
+    letter-spacing: 4px;
+    /* Elegant spacing */
+    /* Soft glow effect */
+    word-spacing: 10px;
+    padding-right: 35px;
+    color: #b76e79;
+    /* Deep black for contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.logo h2 {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    font-weight: lighter;
+    /* Slightly bolder for impact */
+    text-align: center;
+    font-size: 25px;
+    /* Slightly larger for luxury feel */
+    letter-spacing: 2px;
+    /* Elegant spacing */
+    color: #b76e79;
+    /* Deep black for contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    padding-right: 5px;
 }
 
 .logo {
@@ -79,7 +115,7 @@
 .icons a {
     padding-left: 30px;
     font-size: 25px;
-    color: black;
+    color: rgb(45, 41, 41);
 }
 
 .content {
@@ -113,7 +149,7 @@
 .section-best-seller {
     font-size: 35px;
     font-weight: bold;
-    color: black;
+    color: #b76e79;
     margin-bottom: 20px;
     text-align: center;
     font-family: serif;
@@ -122,12 +158,16 @@
 }
 
 .Explore {
-    font-family: 'Adobe Caslon Pro';
-    font-size: 40px;
-    text-align: center;
-    padding-top: 45px;
-    padding-bottom: 40px;
-    font-weight: 10%;
+    font-family: 'Cormorant Garamond', serif;
+    /* Matches the logo */
+    font-size: 42px;
+
+    padding-top: 50px;
+    padding-bottom: 45px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #b76e79;
+    PADDING-LEFT: 37PX;
 }
 
 /* Container for each product */
@@ -148,17 +188,21 @@
     width: 320px;
     padding-right: 40px;
     margin-right: 20px;
-    transition: transform 0.3s ease;
-
+    transition: transform 0.4s ease-out, opacity 0.3s ease-out, box-shadow 0.3s ease-out;
 }
+
 
 .image-1:hover,
 .image-2:hover,
 .image-3:hover,
 .image-4:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
+    /* Slight zoom */
+    opacity: 0.9;
+    /* Soft fade effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    /* Elegant lift effect */
 }
-
 
 
 /* Title for the product (below the image) */
@@ -167,7 +211,7 @@
 .product-title3,
 .product-title4 {
     font-size: 12px;
-    color: black;
+    color: #b76e79;
     margin: auto;
     padding-right: 35px;
     text-align: center;
@@ -268,7 +312,15 @@
 
 
 
-
+.collection {
+    color: #b76e79;
+    font-size: 50px;
+    font-style: italic;
+    font-family: "SAOLDISPLAY-MEDIUM";
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
 
 
 /* model section*/
@@ -502,7 +554,7 @@ footer {
 
 .heritage .logo {
     font-size: 36px;
-    color: white;
+    color: #b55f6c;
 }
 
 .brand {
@@ -518,7 +570,7 @@ footer {
 }
 
 .separator span {
-    color: white;
+    color: #b76e79;
     font-size: 12px;
     display: inline-block;
     position: relative;
@@ -532,7 +584,7 @@ footer {
     top: 50%;
     width: 100px;
     height: 1px;
-    background: white;
+    background: #b76e79;
 }
 
 .separator span::before {
@@ -574,7 +626,7 @@ footer {
 }
 
 .footer-section a:hover {
-    color: white;
+    color: #b76e79;
 }
 
 .newsletter-form input,
@@ -582,20 +634,20 @@ footer {
     width: 100%;
     padding: 12px;
     font-family: inherit;
-    border: 1px solid white;
+    border: 1px solid #b76e79;
     background: transparent;
-    color: black;
+    color: white;
 }
 
 .newsletter-form button {
-    background: white;
+    background: #b76e79;
     border: none;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .newsletter-form button:hover {
-    background: white;
+    background: #b76e79;
 }
 
 .footer-bottom {
@@ -622,5 +674,5 @@ footer {
 
 .copyright {
     font-size: 14px;
-    color: rgba(245, 241, 234, 0.8);
+    color: white;
 }

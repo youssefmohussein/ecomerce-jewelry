@@ -8,56 +8,13 @@
 
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 23px 40px;
-    justify-content: space-between;
-    transition: background-color .5s ease-in-out;
-    border-style: outset;
-    border-width: 1px;
-    border-top: 5px;
-    border-right: 5px;
-    border-color: black;
 
-}
-
-
-.navigation a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    padding-right: 30px;
-    color: white;
-    font-size: 20px;
-}
-
-.logo h1 {
-    font-family: 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-}
-
-.logo {
-    text-decoration: none;
-}
-
-.icons a {
-    padding-left: 30px;
-    font-size: 25px;
-    color: white;
-}
 
 /* Headeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
 
 .add-to-cart,
 button {
-    background-color: black;
+    background-color: #b76e79;
     color: white;
     width: 300px;
     height: 45px;
@@ -69,7 +26,7 @@ button {
 
 
 /* yousssef rings */
-.rings .navbar {
+.rings {
     background-color: black;
     z-index: 1000;
 
@@ -91,7 +48,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding-top: 80px;
 }
 
 .product-ring-image img {
@@ -99,8 +56,6 @@ button {
     display: block;
     position: relative;
     top: -100px;
-
-
     /* border-style: solid;
     border-radius: 20%;
     border-width: 5px;
@@ -115,6 +70,8 @@ button {
 }
 
 .pdetails h2 {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    color: rgb(45, 41, 41);
     font-size: 28px;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -124,6 +81,7 @@ button {
     font-size: 18px;
     margin-bottom: 10px;
     padding-bottom: 20px;
+    color: rgb(45, 41, 41);
 }
 
 /* button {
@@ -137,6 +95,7 @@ button {
 
 .pdetails details {
     padding-top: 20px;
+    color: rgb(45, 41, 41);
 }
 
 
@@ -212,7 +171,7 @@ details[open] {
 
 
 .earings .navbar {
-    background-color: rgba(186, 149, 125, 0.9);
+
     z-index: 1000;
 
 }
@@ -316,7 +275,7 @@ details[open] {
 
 
 .bracelet .navbar {
-    background-color: rgba(186, 149, 125, 0.9);
+    background-color: white;
     z-index: 1000;
 
 }
@@ -359,6 +318,7 @@ details[open] {
     font-size: 28px;
     margin-bottom: 20px;
     padding-bottom: 20px;
+
 }
 
 .pdetails p {
@@ -502,6 +462,7 @@ details[open] {
 }
 
 .Product {
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -536,6 +497,8 @@ details[open] {
 }
 
 .pdetails h2 {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    color: rgb(45, 41, 41);
     font-size: 28px;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -585,7 +548,7 @@ details[open] {
 /*malak styling  "Open-Frame-Diamond-Bracelet"*/
 
 
-  .Open-Frame-Diamond-Bracelet .navbar {
+.Open-Frame-Diamond-Bracelet .navbar {
     background-color: rgba(186, 149, 125, 0.9);
     z-index: 1000;
 
@@ -601,7 +564,7 @@ details[open] {
 }
 
 
- .product-Open-Frame-Diamond-Bracelet-image{
+.product-Open-Frame-Diamond-Bracelet-image {
     width: 30%;
     display: flex;
     justify-content: center;
@@ -609,7 +572,7 @@ details[open] {
 
 }
 
- .product-Open-Frame-Diamond-Bracelet-image img {
+.product-Open-Frame-Diamond-Bracelet-image img {
     width: 150%;
     display: block;
     position: relative;
@@ -625,6 +588,8 @@ details[open] {
 }
 
 .pdetails h2 {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    color: rgb(45, 41, 41);
     font-size: 28px;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -691,7 +656,7 @@ details[open] {
 }
 
 
- .Bent-Nail-Link-Bracelet-image{
+.Bent-Nail-Link-Bracelet-image {
     width: 30%;
     display: flex;
     justify-content: center;
@@ -699,7 +664,7 @@ details[open] {
 
 }
 
- .Bent-Nail-Link-Bracelet-image img {
+.Bent-Nail-Link-Bracelet-image img {
     width: 150%;
     display: block;
     position: relative;
@@ -715,6 +680,8 @@ details[open] {
 }
 
 .pdetails h2 {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    color: rgb(45, 41, 41);
     font-size: 28px;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -781,7 +748,7 @@ details[open] {
 }
 
 
- .product-Park-Avenue-Deco-Bangle-image{
+.product-Park-Avenue-Deco-Bangle-image {
     width: 30%;
     display: flex;
     justify-content: center;
@@ -789,7 +756,7 @@ details[open] {
 
 }
 
- .product-Park-Avenue-Deco-Bangle-image img {
+.product-Park-Avenue-Deco-Bangle-image img {
     width: 150%;
     display: block;
     position: relative;
@@ -805,6 +772,8 @@ details[open] {
 }
 
 .pdetails h2 {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    color: rgb(45, 41, 41);
     font-size: 28px;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -857,12 +826,13 @@ details[open] {
 
 
 .necklace .navbar {
-    background-color: rgba(186, 149, 125, 0.9);
+    background-color: white;
     z-index: 1000;
-
 }
 
 .Product {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    color: rgb(45, 41, 41);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -924,6 +894,12 @@ details[open] {
 
 .pdetails details {
     padding-top: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -932,11 +908,24 @@ details {
     padding: 10px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #555;
+}
+
+.pdetails .pd {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+    padding: 10px;
+    line-height: 1.6;
+    background: #f9f9f9;
+
 }
 
 
-
-summary:hover {
+details summary:hover {
     color: black;
 }
 
@@ -954,7 +943,8 @@ details[open] {
         max-height: 200px;
         opacity: 1;
     }
-} 
+}
+
 .quantity-container {
     display: flex;
     align-items: center;
@@ -966,7 +956,7 @@ details[open] {
 .quantity-btn {
     width: 40px;
     height: 40px;
-    background-color: #f5f5f5;
+    background-color: #b76e79;
     border: none;
     font-size: 20px;
     cursor: pointer;
