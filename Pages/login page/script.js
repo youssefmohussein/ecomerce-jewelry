@@ -36,8 +36,8 @@ signUpForm.addEventListener("submit", function (e) {
   }
 
   const isValid = password.length >= 8 &&
-                  /[A-Za-z]/.test(password) &&
-                  /\d/.test(password);
+    /[A-Za-z]/.test(password) &&
+    /\d/.test(password);
 
   if (!isValid) {
     alert("Password must be at least 8 characters and include both letters and numbers.");
@@ -50,7 +50,7 @@ signUpForm.addEventListener("submit", function (e) {
   }
 
   alert("Account created successfully!");
-  signUpForm.submit(); 
+  signUpForm.submit();
 });
 
 
@@ -72,14 +72,15 @@ signInForm.addEventListener("submit", function (e) {
   }
 
   const isValid = password.length >= 8 &&
-                  /[A-Za-z]/.test(password) &&
-                  /\d/.test(password);
+    /[A-Za-z]/.test(password) &&
+    /\d/.test(password);
 
   if (!isValid) {
     alert("Password must be at least 8 characters and include both letters and numbers.");
     return;
   }
-  
+
   alert("Login successful!");
-  signInForm.submit(); 
+  signInForm.submit();
+
 });

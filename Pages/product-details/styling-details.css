@@ -274,7 +274,7 @@ details[open] {
 /*malak styling  "bracelets"*/
 
 
-.bracelet .navbar {
+.Bracelet .navbar {
     background-color: white;
     z-index: 1000;
 
@@ -291,16 +291,16 @@ details[open] {
 
 
 
-.product-bracelet-image {
-    width: 60%;
+.product-bracelet-img {
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding-top: 80px;
 }
 
-.product-bracelet-image img {
-    width: 100%;
+.product-bracelet-img img {
+    width: 150%;
     display: block;
     position: relative;
     top: -100px;
@@ -315,6 +315,8 @@ details[open] {
 }
 
 .pdetails h2 {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    color: rgb(45, 41, 41);
     font-size: 28px;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -325,10 +327,12 @@ details[open] {
     font-size: 18px;
     margin-bottom: 10px;
     padding-bottom: 20px;
+    color: rgb(45, 41, 41);
 }
 
 .pdetails details {
     padding-top: 20px;
+    color: rgb(45, 41, 41);
 }
 
 
@@ -363,460 +367,6 @@ details[open] {
 
 
 /*malak styling  "bracelet-Bumpy-Cuff "*/
-
-
-.Sugar-Cap-Bangle .navbar {
-
-    z-index: 1000;
-
-}
-
-.Product {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 150px;
-    background-color: white;
-    padding: 200px;
-}
-
-
-
-.product-Sugar-Cap-Bangle-image {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.product-Sugar-Cap-Bangle-image img {
-    width: 150%;
-    display: block;
-    position: relative;
-    top: -100px;
-
-}
-
-.pdetails {
-    max-width: 400px;
-    color: black;
-    position: relative;
-    top: -100px;
-}
-
-.pdetails h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-}
-
-.pdetails p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-}
-
-.pdetails details {
-    padding-top: 20px;
-}
-
-
-details {
-    margin-top: 15px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-}
-
-
-
-summary:hover {
-    color: black;
-}
-
-details[open] {
-    animation: expand 0.4s ease-out;
-}
-
-@keyframes expand {
-    from {
-        max-height: 0;
-        opacity: 0;
-    }
-
-    to {
-        max-height: 200px;
-        opacity: 1;
-    }
-}
-
-
-/*malak styling  "Tread-Bracelet-Azurmalachite"*/
-
-
-.Tread-Bracelet-Azurmalachite {
-
-    z-index: 1000;
-
-}
-
-.Product {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 150px;
-    background-color: white;
-    padding: 200px;
-}
-
-
-
-.product-Tread-Bracelet-Azurmalachite-image {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.product-Tread-Bracelet-Azurmalachite-image img {
-    width: 150%;
-    display: block;
-    position: relative;
-    top: -100px;
-
-}
-
-.pdetails {
-    max-width: 400px;
-    color: black;
-    position: relative;
-    top: -100px;
-}
-
-.pdetails h2 {
-    font-family: 'SAOLDISPLAY-MEDIUM';
-    color: rgb(45, 41, 41);
-    font-size: 28px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-}
-
-.pdetails p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-}
-
-.pdetails details {
-    padding-top: 20px;
-}
-
-
-details {
-    margin-top: 15px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-}
-
-
-
-summary:hover {
-    color: black;
-}
-
-details[open] {
-    animation: expand 0.4s ease-out;
-}
-
-@keyframes expand {
-    from {
-        max-height: 0;
-        opacity: 0;
-    }
-
-    to {
-        max-height: 200px;
-        opacity: 1;
-    }
-}
-
-
-/*malak styling  "Open-Frame-Diamond-Bracelet"*/
-
-
-.Open-Frame-Diamond-Bracelet .navbar {
-
-    z-index: 1000;
-
-}
-
-.Product {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 150px;
-    background-color: white;
-    padding: 200px;
-}
-
-
-.product-Open-Frame-Diamond-Bracelet-image {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.product-Open-Frame-Diamond-Bracelet-image img {
-    width: 150%;
-    display: block;
-    position: relative;
-    top: -100px;
-
-}
-
-.pdetails {
-    max-width: 400px;
-    color: black;
-    position: relative;
-    top: -100px;
-}
-
-.pdetails h2 {
-    font-family: 'SAOLDISPLAY-MEDIUM';
-    color: rgb(45, 41, 41);
-    font-size: 28px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-}
-
-.pdetails p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-}
-
-.pdetails details {
-    padding-top: 20px;
-}
-
-
-details {
-    margin-top: 15px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-}
-
-
-
-summary:hover {
-    color: black;
-}
-
-details[open] {
-    animation: expand 0.4s ease-out;
-}
-
-@keyframes expand {
-    from {
-        max-height: 0;
-        opacity: 0;
-    }
-
-    to {
-        max-height: 200px;
-        opacity: 1;
-    }
-}
-
-
-
-/*malak styling  "Bent-Nail-Link-Bracelet"*/
-
-
-.Bent-Nail-Link-Bracelet .navbar {
-    z-index: 1000;
-
-}
-
-.Product {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 150px;
-    background-color: whitesmoke;
-    padding: 200px;
-}
-
-
-.Bent-Nail-Link-Bracelet-image {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.Bent-Nail-Link-Bracelet-image img {
-    width: 150%;
-    display: block;
-    position: relative;
-    top: -100px;
-
-}
-
-.pdetails {
-    max-width: 400px;
-    color: black;
-    position: relative;
-    top: -100px;
-}
-
-.pdetails h2 {
-    font-family: 'SAOLDISPLAY-MEDIUM';
-    color: rgb(45, 41, 41);
-    font-size: 28px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-}
-
-.pdetails p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-}
-
-.pdetails details {
-    padding-top: 20px;
-}
-
-
-details {
-    margin-top: 15px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-}
-
-
-
-summary:hover {
-    color: black;
-}
-
-details[open] {
-    animation: expand 0.4s ease-out;
-}
-
-@keyframes expand {
-    from {
-        max-height: 0;
-        opacity: 0;
-    }
-
-    to {
-        max-height: 200px;
-        opacity: 1;
-    }
-}
-
-/*upgraded*/
-
-/*malak styling  "Bent-Nail-Link-Bracelet"*/
-
-
-.Park-Avenue-Deco-Bangle .navbar {
-    z-index: 1000;
-
-}
-
-.Product {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 150px;
-    background-color: white;
-    padding: 200px;
-}
-
-
-.product-Park-Avenue-Deco-Bangle-image {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.product-Park-Avenue-Deco-Bangle-image img {
-    width: 150%;
-    display: block;
-    position: relative;
-    top: -100px;
-
-}
-
-.pdetails {
-    max-width: 400px;
-    color: black;
-    position: relative;
-    top: -100px;
-}
-
-.pdetails h2 {
-    font-family: 'SAOLDISPLAY-MEDIUM';
-    color: rgb(45, 41, 41);
-    font-size: 28px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-}
-
-.pdetails p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-}
-
-.pdetails details {
-    padding-top: 20px;
-}
-
-
-details {
-    margin-top: 15px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-}
-
-
-
-summary:hover {
-    color: black;
-}
-
-details[open] {
-    animation: expand 0.4s ease-out;
-}
-
-@keyframes expand {
-    from {
-        max-height: 0;
-        opacity: 0;
-    }
-
-    to {
-        max-height: 200px;
-        opacity: 1;
-    }
-}
-
 
 
 
