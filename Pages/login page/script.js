@@ -50,7 +50,9 @@ signUpForm.addEventListener("submit", function (e) {
   }
 
   alert("Account created successfully!");
+
   signUpForm.submit();
+
 });
 
 
@@ -60,6 +62,8 @@ signInForm.addEventListener("submit", function (e) {
 
   const email = document.getElementById("loginEmail").value.trim();
   const password = document.getElementById("loginPassword").value;
+  const adminEmail = "norhan@gmail.com";
+  const adminPassword = "norhan1234K";
 
   if (!email) {
     alert("Email is required!");
@@ -68,6 +72,11 @@ signInForm.addEventListener("submit", function (e) {
 
   if (!password) {
     alert("Password is required!");
+    return;
+  }
+  if (email === adminEmail && password === adminPassword) {
+    window.location.href = "../admin-dashboard/dashboard.html"; 
+  
     return;
   }
 
@@ -79,8 +88,14 @@ signInForm.addEventListener("submit", function (e) {
     alert("Password must be at least 8 characters and include both letters and numbers.");
     return;
   }
-
-  alert("Login successful!");
-  signInForm.submit();
-
+  
+  alert("Invalid credentials. Please try again");
+  // signInForm.submit(); 
 });
+
+
+  // alert("Login successful!");
+  // signInForm.submit();
+
+;
+

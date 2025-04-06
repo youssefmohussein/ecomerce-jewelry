@@ -13,8 +13,12 @@
     <ul>
       <a href="../admin-dashboard/dashboard.html"><li>Dashboard</li></a>
       <a href="../admin-dashboard/customers.html"><li>Customers</li></a>
+
       <a href="../admin-dashboard/orders.html"> <li>Orders</li></a>
       <li><a href="#">Products</a></li>
+
+      <a href="../admin-dashboard/orders.html"><li>orders</li></a>
+
   
     </ul>
   </div>
@@ -117,23 +121,8 @@
     </div>
   </div>
 
-  <script>
-    function toggleStatus(element) {
-      if (element.classList.contains('active')) {
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element.textContent = 'Deactive';
-      } else {
-        element.classList.remove('inactive');
-        element.classList.add('active');
-        element.textContent = 'Active';
-      }
-    }
-   
-    function deleteRow(element) {
-      var row = element.closest('tr');  // Get the closest row (tr)
-      row.remove();  // Remove the row from the table
-    }
-  </script>
+          <script src="dashboard.js"></script>
+
+
 </body>
 </html>
