@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <!-- Heritage Section -->
         <div class="heritage">
             <div class="logo">✦</div>
-            <h2 class="brand">VITA</h2>
+            <h2 class="brand">VELORA JEWEL</h2>
             <p class="tagline">PARIS • 1888</p>
             <div class="separator">
                 <span>◆</span>
@@ -135,19 +135,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-             /* malak js scoller */ 
-             window.onscroll = function() {
-                var button = document.getElementById("scroll-to-top");
-                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                    button.style.display = "block";
-                } else {
-                    button.style.display = "none";
-                }
-            };
-            
-            document.getElementById("scroll-to-top").addEventListener("click", function() {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-            });
-    
+/* malak js scoller */
+window.onscroll = function () {
+    var button = document.getElementById("scroll-to-top");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+};
+
+document.getElementById("scroll-to-top").addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
 
 
