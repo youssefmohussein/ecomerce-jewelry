@@ -249,7 +249,7 @@ td {
   border-bottom: 1px solid #eee;
 }
 
-.status {
+.status , .status-shipped{
   color: green;
   font-weight: bold;
   background: #d3f9d8;
@@ -263,13 +263,21 @@ td {
 }
 
 /* customerrr newww*/
-.status1 {
+.status1 , .status-pending {
   color: #FFA500;
   font-weight: bold;
   background: rgb(250, 229, 192);
   padding: 5px 10px;
   border-radius: 5px;
+} 
+.status-delivered {
+  color: rgb(60, 60, 134);
+  font-weight: bold;
+  background: rgb(207, 207, 242);
+  padding: 5px 10px;
+  border-radius: 5px;
 }
+
 
 
 /* Search Bar*/
@@ -343,21 +351,7 @@ a:hover {
   outline: none;
 }
 
-/* Status Badges - More Stylish */
-.status-pending {
-  background: linear-gradient(to right, #ffcc80, #ffa500);
-  color: black;
-}
 
-.status-shipped {
-  background: linear-gradient(to right, #cce5ff, #1e90ff);
-  color: black;
-}
-
-.status-delivered {
-  background: linear-gradient(to right, #a8e6cf, #28a745);
-  color: black;
-}
 
 /* Buttons Hover Effect */
 .action-btn {
