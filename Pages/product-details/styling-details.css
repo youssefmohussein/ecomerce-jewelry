@@ -366,7 +366,7 @@ details[open] {
 
 
 .Sugar-Cap-Bangle .navbar {
-    background-color: rgba(186, 149, 125, 0.9);
+
     z-index: 1000;
 
 }
@@ -455,8 +455,8 @@ details[open] {
 /*malak styling  "Tread-Bracelet-Azurmalachite"*/
 
 
-.Tread-Bracelet-Azurmalachite .navbar {
-    background-color: rgba(186, 149, 125, 0.9);
+.Tread-Bracelet-Azurmalachite {
+
     z-index: 1000;
 
 }
@@ -549,7 +549,7 @@ details[open] {
 
 
 .Open-Frame-Diamond-Bracelet .navbar {
-    background-color: rgba(186, 149, 125, 0.9);
+
     z-index: 1000;
 
 }
@@ -641,7 +641,6 @@ details[open] {
 
 
 .Bent-Nail-Link-Bracelet .navbar {
-    background-color: rgba(186, 149, 125, 0.9);
     z-index: 1000;
 
 }
@@ -733,7 +732,6 @@ details[open] {
 
 
 .Park-Avenue-Deco-Bangle .navbar {
-    background-color: rgba(186, 149, 125, 0.9);
     z-index: 1000;
 
 }
