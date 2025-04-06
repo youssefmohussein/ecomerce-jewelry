@@ -5,13 +5,13 @@
 }
 
 .navbar:hover{
-    background-color: #615c5f;
+    background-color: #e1d4d4;
     color: #fff;
 }
 
 body {
     font-family: montserrat, sans-serif;
-    background: rgba(236, 207, 188, 0.9);
+    background: rgba(244, 242, 242, 0.9);
     scroll-behavior: smooth;
 }
 
@@ -21,9 +21,9 @@ body {
 }
 
 .wrapper h2 {
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: -80px;
-    padding: 100px;
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    margin-bottom: -100px;
+    padding: 140px;
     text-align: center;
     text-transform: uppercase;
 }

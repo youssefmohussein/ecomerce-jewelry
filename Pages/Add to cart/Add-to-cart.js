@@ -34,3 +34,26 @@ function updateTotal() {
     document.querySelector(".right-bar p:nth-child(5) span:last-child").textContent = `LE ${shipping.toLocaleString()}`;
     document.querySelector(".right-bar p:nth-child(7) span:last-child").textContent = `LE ${total.toLocaleString()}`;
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartContainer = document.getElementById("cart-items");
+
+    cart.forEach(product => {
+        const box = document.createElement("div");
+        box.classList.add("box");
+        box.innerHTML = `
+            <div class="product-name">${product.name}</div>
+            <div class="product-price">LE ${product.price}</div>
+            <div class="unit"><input type="number" value="${product.quantity}"></div>
+            <div class="btn-area">Remove</div>
+        `;
+        cartContainer.appendChild(box);
+    });
+
+    // Call updateTotal() here
+    updateTotal();
+
+    // Add your existing quantity change and remove event listeners here...
+});
