@@ -265,13 +265,16 @@ td {
 }
 .inactive{
   color: red;
-  background: pink;
+  background: #f9d3d3;;
 }
 
 
 .edit {
   color: blue;
   cursor: pointer;
+}
+.delete{
+  color: red;
 }
 
 /* customerrr newww*/
@@ -375,7 +378,7 @@ a:hover {
 .view-btn:hover {
   background-color: #218838;
 }
-.delete {
+/* .delete {
   color: red;
   cursor: pointer;
   font-weight: bold;
@@ -384,9 +387,9 @@ a:hover {
   border-radius: 5px;
   background-color: #ffe5e5;
   transition: background-color 0.3s ease, color 0.3s ease;
-}
+} */
 
-.delete:hover {
+/* .delete:hover {
   background-color: red;
   color: white;
-}
+} */
