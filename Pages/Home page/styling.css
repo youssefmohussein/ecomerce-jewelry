@@ -458,7 +458,7 @@
 
 /* About Section */
 .workshop-content {
-    padding: 80px ;
+    padding: 50px ;
 }
 
 
@@ -502,6 +502,9 @@
     text-align: left;
     font-style: italic;
     font-family: 'Laslo-Regular';
+    line-height: 1.4;  
+   
+   
 }
 
 
@@ -528,6 +531,8 @@
     text-align: left;
     font-style: italic;
     font-family: 'Laslo-Regular';
+     line-height: 1.7;  
+      
 
 }
 
