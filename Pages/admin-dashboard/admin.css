@@ -10,7 +10,7 @@
     min-height: 100vh;
     background: #f1f2f7;
   }
-  /**/
+  
   /* Sidebar */
   .sidebar {
     width: 240px;
@@ -107,14 +107,15 @@
     padding: 12px ;
     border-bottom: 1px solid #eee;
   }
-  
-  /* .status {
+/*   
+  .status {
     color: green;
     font-weight: bold;
     background: #d3f9d8;
     padding: 5px 10px;
     border-radius: 5px;
   } */
+   
   
   .edit {
     color: blue;
@@ -249,6 +250,9 @@ td {
   border-bottom: 1px solid #eee;
 }
 
+
+
+
 .status , .status-shipped{
   color: green;
   font-weight: bold;
@@ -256,6 +260,14 @@ td {
   padding: 5px 10px;
   border-radius: 5px;
 }
+.active{
+  color: green;
+}
+.inactive{
+  color: red;
+  background: pink;
+}
+
 
 .edit {
   color: blue;
