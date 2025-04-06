@@ -108,18 +108,39 @@
     border-bottom: 1px solid #eee;
   }
   
-  .status {
+  /* .status {
     color: green;
     font-weight: bold;
     background: #d3f9d8;
     padding: 5px 10px;
     border-radius: 5px;
-  }
+  } */
   
   .edit {
     color: blue;
     cursor: pointer;
 
   }
+  .delete{
+    color: blue;
+    cursor: pointer;
+  }
+
+  .status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.active {
+    color: green;
+    background: #d3f9d8;
+}
+
+.inactive {
+    color: red;
+    background: #f9d3d3;
+}
 
   
