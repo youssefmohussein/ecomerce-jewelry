@@ -260,6 +260,13 @@ td {
   padding: 5px 10px;
   border-radius: 5px;
 }
+.active{
+  color: green;
+}
+.inactive{
+  color: red;
+  background: pink;
+}
 
 
 .edit {
