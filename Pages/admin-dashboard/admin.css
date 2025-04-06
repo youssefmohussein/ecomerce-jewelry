@@ -252,19 +252,37 @@ td {
 
 
 
+
+.status , .status-shipped{
+  color: green;
+  font-weight: bold;
+  background: #d3f9d8;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
 .edit {
   color: blue;
   cursor: pointer;
 }
 
 /* customerrr newww*/
-.status1 {
+.status1 , .status-pending {
   color: #FFA500;
   font-weight: bold;
   background: rgb(250, 229, 192);
   padding: 5px 10px;
   border-radius: 5px;
+} 
+.status-delivered {
+  color: rgb(60, 60, 134);
+  font-weight: bold;
+  background: rgb(207, 207, 242);
+  padding: 5px 10px;
+  border-radius: 5px;
 }
+
 
 
 /* Search Bar*/
@@ -338,21 +356,7 @@ a:hover {
   outline: none;
 }
 
-/* Status Badges - More Stylish */
-.status-pending {
-  background: linear-gradient(to right, #ffcc80, #ffa500);
-  color: black;
-}
 
-.status-shipped {
-  background: linear-gradient(to right, #cce5ff, #1e90ff);
-  color: black;
-}
-
-.status-delivered {
-  background: linear-gradient(to right, #a8e6cf, #28a745);
-  color: black;
-}
 
 /* Buttons Hover Effect */
 .action-btn {
@@ -364,4 +368,18 @@ a:hover {
 .view-btn:hover {
   background-color: #218838;
 }
+.delete {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 4px 8px;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: #ffe5e5;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+.delete:hover {
+  background-color: red;
+  color: white;
+}

@@ -13,15 +13,15 @@
             <ul>
               <a href="../admin-dashboard/dashboard.html"><li>Dashboard</li></a>
               <a href="../admin-dashboard/customers.html"><li>Customers</li></a>
-              <li>Orders</li>
-          
+              <a href="../admin-dashboard/orders.html"> <li>Orders</li></a>
+              <li><a href="#">Products</a></li>
             </ul>
           </div>
           <div class ="main" style=" background-color:#b9b9ff;">
 
             <div class="top">
                 <h1> Velora's Customers </h1>
-                <hr>
+                
                 
             </div>
             <div class="cards">
@@ -31,7 +31,7 @@
                 </div>
                 <div class="card blue" style="color:blueviolet ;">
                     <h3>Orders</h3>
-                    <p>50</p>
+                    <p>5</p>
                   </div>
 
             </div>
@@ -51,54 +51,45 @@
                       <th>Total Amount</th>
                     </tr>
                     <tr>
-                      <td>Hassan amin</td>
-                      <td>Hassan.amin@gmail.com</td>
+                      <td>John Doe</td>
+                      <td>John Doe@gmail.com</td>
                       <td>01158269843</td>
                       <td><span class="status">paid</span></td>
-                      <td>8000 LE</td>
+                      <td>LE 5,961,812.00</td>
+                      <td><span class="delete" onclick="deleteRow(this)">Delete</span></td>
 
                     </tr>
                     <tr>
-                        <td>Amina Khalil</td>
-                      <td>aamina00@gmail.com</td>
+                        <td>Jane Smith</td>
+                      <td>Jane Smith.com</td>
                       <td>0123456789</td>
                       <td><span class="status1">Unpaid</span></td>
-                      <td>700 LE</td>
+                      <td>LE 1,017,719.00</td>
+                      <td><span class="delete" onclick="deleteRow(this)">Delete</span></td>
                     </tr>
                     <tr>
-                        <td>Mostafa Maged</td>
-                        <td>mostafa56@gmail.com</td>
+                        <td>Michael Brown</td>
+                        <td>Michael Brown@gmail.com</td>
                         <td>01235678901</td>
                         <td><span class="status1">Unpaid</span></td>
-                        <td>68000 LE</td>
+                        <td>LE 4,934,489.00</td>
+                        <td><span class="delete" onclick="deleteRow(this)">Delete</span></td>
                     </tr>
                     <tr>
-                        <td>Layla Ahmed</td>
-                        <td>lailahmed60@gmail.com</td>
+                        <td>Emma Johnson</td>
+                        <td>EmmaJohnson@gmail.com</td>
                         <td>01198765432</td>
                         <td><span class="status">paid</span></td>
-                        <td>95060 LE</td>
+                        <td>LE 4,670,489.00</td>
+                        <td><span class="delete" onclick="deleteRow(this)">Delete</span></td>
                     </tr>
                     <tr>
-                        <td>fatema Tamer</td>
-                        <td>Fatemaa44@gmail.com</td>
+                        <td> Olivia Smith</td>
+                        <td>OliviaSmith@gmail.com</td>
                         <td>01259812367</td>
                         <td><span class="status1">Unpaid</span></td>
-                        <td>12589LE</td>
-                    </tr>
-                    <tr>
-                        <td>Habiba Zaki</td>
-                        <td>habibaa277@gmail.com</td>
-                        <td>01167903812</td>
-                        <td><span class="status">paid</span></td>
-                        <td>8509 LE</td>
-                    </tr>
-                    <tr>
-                        <td>Tara Emad</td>
-                        <td>Tarraemad90@gmail.com</td>
-                        <td>012587994662</td>
-                        <td><span class="status">paid</span></td>
-                        <td>12555 LE</td>
+                        <td>LE 7,978,677.00</td>
+                        <td><span class="delete" onclick="deleteRow(this)">Delete</span></td>
                     </tr>
                 </table>
               </div>
@@ -106,5 +97,6 @@
           </div>
 
           <script src="Customer.js"></script>
+          <script src="dashboard.js"></script>
     </body>
 </html>
