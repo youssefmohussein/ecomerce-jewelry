@@ -1,37 +1,32 @@
-/* Headeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
+/* ========== Global Styles ========== */
 * {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-
 }
 
-
-
-/* Headeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
-
-.add-to-cart,
-button {
+button,
+.add-to-cart {
     background-color: #b76e79;
     color: white;
     width: 300px;
     height: 45px;
     font-size: 19px;
-    border: #8C6F54
+    border: #8C6F54;
 }
 
-
-
-
-/* yousssef rings */
-.rings {
-    background-color: black;
+/* ========== Navbar ========== */
+.Bracelet .navbar,
+.earings .navbar,
+.necklace .navbar,
+.rings .navbar {
+    background-color: white;
     z-index: 1000;
-
 }
 
+/* ========== Product Section ========== */
 .Product {
     display: flex;
     align-items: center;
@@ -41,377 +36,33 @@ button {
     padding: 200px;
 }
 
-
-
-.product-ring-image {
+/* ========== Image Containers ========== */
+.product-bracelet-img,
+.product-earings-image,
+.product-ring-image,
+.product-necklace-image {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 80px;
 }
-
-.product-ring-image img {
-    width: 150%;
-    display: block;
-    position: relative;
-    top: -100px;
-    /* border-style: solid;
-    border-radius: 20%;
-    border-width: 5px;
-    border-color: rgba(186, 149, 125, 0.8); */
-}
-
-.pdetails {
-    max-width: 400px;
-    color: black;
-    position: relative;
-    top: -100px;
-}
-
-.pdetails h2 {
-    font-family: 'SAOLDISPLAY-MEDIUM';
-    color: rgb(45, 41, 41);
-    font-size: 28px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-}
-
-.pdetails p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    color: rgb(45, 41, 41);
-}
-
-/* button {
-    background: black;
-    color: white;
-    padding: 12px 18px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: none;
-} */
-
-.pdetails details {
-    padding-top: 20px;
-    color: rgb(45, 41, 41);
-}
-
-
-details {
-    margin-top: 15px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-}
-
-
-
-summary:hover {
-    color: black;
-}
-
-details[open] {
-    animation: expand 0.4s ease-out;
-}
-
-@keyframes expand {
-    from {
-        max-height: 0;
-        opacity: 0;
-    }
-
-    to {
-        max-height: 200px;
-        opacity: 1;
-    }
-}
-
-/* Color Swatches */
-.color-options {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.color-swatch {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: 2px solid transparent;
-    transition: 0.3s;
-    border: black;
-    border-style: solid;
-    border-radius: 0px;
-}
-
-.white {
-    background: white;
-
-}
-
-.green {
-    background: darkgreen;
-}
-
-.black {
-    background: black;
-}
-
-.color-swatch.active {
-    border: 2px solid #333;
-}
-
-
-
-
-/* malak styling  "earings "*/
-
-
-
-.earings .navbar {
-
-    z-index: 1000;
-
-}
-
-.Product {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 150px;
-    background-color: white;
-    padding: 200px;
-}
-
-
-
-.product-earings-image {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.product-earings-image img {
-    width: 150%;
-    display: block;
-    position: relative;
-    top: -100px;
-
-
-    /* border-style: solid;
-    border-radius: 20%;
-    border-width: 5px;
-    border-color: rgba(186, 149, 125, 0.8); */
-}
-
-.pdetails {
-    max-width: 400px;
-    color: black;
-    position: relative;
-    top: -100px;
-}
-
-.pdetails h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-}
-
-.pdetails p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-}
-
-/* button {
-    background: black;
-    color: white;
-    padding: 12px 18px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: none;
-} */
-
-.pdetails details {
-    padding-top: 20px;
-}
-
-
-details {
-    margin-top: 15px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-}
-
-
-
-summary:hover {
-    color: black;
-}
-
-details[open] {
-    animation: expand 0.4s ease-out;
-}
-
-@keyframes expand {
-    from {
-        max-height: 0;
-        opacity: 0;
-    }
-
-    to {
-        max-height: 200px;
-        opacity: 1;
-    }
-}
-
-
-/*malak styling  "bracelets"*/
-
-
-.Bracelet .navbar {
-    background-color: white;
-    z-index: 1000;
-
-}
-
-.Product {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 150px;
-    background-color: white;
-    padding: 200px;
-}
-
-
-
-.product-bracelet-img {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 80px;
-}
-
-.product-bracelet-img img {
-    width: 150%;
-    display: block;
-    position: relative;
-    top: -100px;
-
-}
-
-.pdetails {
-    max-width: 400px;
-    color: black;
-    position: relative;
-    top: -100px;
-}
-
-.pdetails h2 {
-    font-family: 'SAOLDISPLAY-MEDIUM';
-    color: rgb(45, 41, 41);
-    font-size: 28px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-
-}
-
-.pdetails p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    color: rgb(45, 41, 41);
-}
-
-.pdetails details {
-    padding-top: 20px;
-    color: rgb(45, 41, 41);
-}
-
-
-details {
-    margin-top: 15px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-}
-
-
-
-summary:hover {
-    color: black;
-}
-
-details[open] {
-    animation: expand 0.4s ease-out;
-}
-
-@keyframes expand {
-    from {
-        max-height: 0;
-        opacity: 0;
-    }
-
-    to {
-        max-height: 200px;
-        opacity: 1;
-    }
-}
-
-
-/*malak styling  "bracelet-Bumpy-Cuff "*/
-
-
-
-/* jana styling */
-
-
-.necklace .navbar {
-    background-color: white;
-    z-index: 1000;
-}
-
-.Product {
-    font-family: 'SAOLDISPLAY-MEDIUM';
-    color: rgb(45, 41, 41);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 150px;
-    background-color: white;
-    padding: 200px;
-}
-
-
 
 .product-necklace-image {
     width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
+.product-bracelet-img img,
+.product-earings-image img,
+.product-ring-image img,
 .product-necklace-image img {
     width: 150%;
     display: block;
     position: relative;
     top: -100px;
-
-
-    /* border-style: solid;
-    border-radius: 20%;
-    border-width: 5px;
-    border-color: rgba(186, 149, 125, 0.8); */
 }
 
+/* ========== Product Details ========== */
 .pdetails {
     max-width: 400px;
     color: black;
@@ -431,47 +82,18 @@ details[open] {
     padding-bottom: 20px;
 }
 
-/* button {
-    background: black;
-    color: white;
-    padding: 12px 18px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: none;
-} */
-
 .pdetails details {
     padding-top: 20px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 10px;
-    transition: all 0.3s ease-in-out;
 }
 
-
+/* ========== Details / Summary Styling ========== */
 details {
     margin-top: 15px;
     padding: 10px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #555;
+    color: rgb(45, 41, 41);
 }
-
-.pdetails .pd {
-    font-family: 'SAOLDISPLAY-MEDIUM';
-    font-size: 14px;
-    color: #555;
-    margin: 10px 0;
-    padding: 10px;
-    line-height: 1.6;
-    background: #f9f9f9;
-
-}
-
 
 details summary:hover {
     color: black;
@@ -493,6 +115,7 @@ details[open] {
     }
 }
 
+/* ========== Quantity Controls ========== */
 .quantity-container {
     display: flex;
     align-items: center;
@@ -521,4 +144,46 @@ details[open] {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     font-size: 16px;
+}
+
+/* ========== Color Swatches ========== */
+.color-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.color-swatch {
+    width: 25px;
+    height: 25px;
+    border-radius: 0px;
+    border: 2px solid black;
+    transition: 0.3s;
+}
+
+.white {
+    background: white;
+}
+
+.green {
+    background: darkgreen;
+}
+
+.black {
+    background: black;
+}
+
+.color-swatch.active {
+    border: 2px solid #333;
+}
+
+/* ========== Extra ========== */
+.pdetails .pd {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+    padding: 10px;
+    line-height: 1.6;
+    background: #f9f9f9;
 }
