@@ -79,7 +79,7 @@ signInForm.addEventListener("submit", function (e) {
     alert("Password must be at least 8 characters and include both letters and numbers.");
     return;
   }
-
+  
   alert("Login successful!");
   signInForm.submit(); 
 });

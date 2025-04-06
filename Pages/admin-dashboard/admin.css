@@ -36,7 +36,7 @@
   /* Main */
   .main {
     flex: 1;
-    padding: 20px 40px;  
+    padding: 20px 40px;
   }
   
   .top {
@@ -119,40 +119,166 @@
   .edit {
     color: blue;
     cursor: pointer;
+
   }
+
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background: #f1f2f7;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #111827;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  color: #b9b9ff;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 20px 40px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Color classes */
+.purble {
+  color: #6a5acd;
+}
+
+.blue {
+  color: #1e90ff;
+}
+
+.pink {
+  color: #e91e63;
+}
+
+.lightblue {
+  color: #00bcd4;
+}
+
+/* Table */
+.table {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.status {
+  color: green;
+  font-weight: bold;
+  background: #d3f9d8;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.edit {
+  color: blue;
+  cursor: pointer;
+}
 
 /* customerrr newww*/
-  .status1 {
-    color:#FFA500;
-    font-weight: bold;
-    background: rgb(250, 229, 192);
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
+.status1 {
+  color: #FFA500;
+  font-weight: bold;
+  background: rgb(250, 229, 192);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 
 
-  /* Search Bar*/
-  .search-container {
-    margin: 20px 0;
-    text-align: left;
+/* Search Bar*/
+.search-container {
+  margin: 20px 0;
+  text-align: left;
 }
 
 .search-container input {
-    width: 200px;
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #6a5acd ;
-    border-radius: 4px;
-    
+  width: 200px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #6a5acd;
+  border-radius: 4px;
+
 }
+
 a {
-  text-decoration: none; 
-  color: white;         
-  cursor: pointer;       
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 a:hover {
-  color:#6a5acd  ;        
+  color: #6a5acd;
 }
 
 /*.search-container button {
@@ -170,3 +296,61 @@ a:hover {
 .search-container button i {
   color: #6a5acd ;
 }*/
+
+/* Enhanced Orders Table Styling */
+.orders-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.orders-container:hover {
+  transform: scale(1.02);
+}
+
+/* Search & Filter Inputs */
+.search-container input,
+.search-container select {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #6a5acd;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-container input:focus,
+.search-container select:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.5);
+  outline: none;
+}
+
+/* Status Badges - More Stylish */
+.status-pending {
+  background: linear-gradient(to right, #ffcc80, #ffa500);
+  color: black;
+}
+
+.status-shipped {
+  background: linear-gradient(to right, #cce5ff, #1e90ff);
+  color: black;
+}
+
+.status-delivered {
+  background: linear-gradient(to right, #a8e6cf, #28a745);
+  color: black;
+}
+
+/* Buttons Hover Effect */
+.action-btn {
+  font-size: 15px;
+  padding: 8px 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.view-btn:hover {
+  background-color: #218838;
+}
+
