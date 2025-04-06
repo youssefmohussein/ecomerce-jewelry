@@ -94,8 +94,8 @@ signInForm.addEventListener("submit", function (e) {
 });
 
 
-  alert("Login successful!");
-  signInForm.submit();
+  // alert("Login successful!");
+  // signInForm.submit();
 
 ;
 
