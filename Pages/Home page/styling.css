@@ -90,7 +90,7 @@
     padding-right: 35px;
     color: #b76e79;
     /* Deep black for contrast */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 3px #b76e79;
 }
 
 .logo h2 {
@@ -108,14 +108,14 @@
     padding-right: 5px;
 }
 
-.logo {
+.logo{
     text-decoration: none;
 }
 
 .icons a {
     padding-left: 30px;
     font-size: 25px;
-    color: rgb(45, 41, 41);
+    color: rgb(84, 80, 80);
 }
 
 .content {
