@@ -3,7 +3,8 @@ body {
   line-height: 1.6;
 }
 
-.container,.refundd  {
+.container,
+.refundd {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -15,7 +16,8 @@ body {
 }
 
 
-.container h1,.refundquestion {
+.container h1,
+.refundquestion {
   font-size: 2em;
   font-weight: 300;
   text-align: center;
@@ -26,22 +28,16 @@ body {
 }
 
 .refundquestion {
- text-align: left;
- font-size: 28px;
+  text-align: left;
+  font-size: 28px;
 }
 
 
-p,.refundanswer {
+p,
+.refundanswer {
   margin-top: 40px;
   margin-bottom: 20px;
   font-size: 18px;
-  color:rgb( 69, 71, 78);
+  color: rgb(69, 71, 78);
   font-family: FuturaNowHeadline;
 }
-
-
-
-
-
-
-
