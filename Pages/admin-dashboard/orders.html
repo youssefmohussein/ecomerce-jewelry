@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Orders</title>
+    <title> Orders</title>
     <link rel="stylesheet" href="admin.css"> <!-- Link to external CSS -->
 </head>
 
@@ -12,13 +12,14 @@
     <script src="orders.js"></script>
     <!-- Sidebar -->
     <div class="sidebar">
-        <h2>Admin Dashboard</h2>
+        <h2>Velora</h2>
+        <hr>
         <ul>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Orders</a></li>
+            <a href="../admin-dashboard/dashboard.html"><li>Dashboard</li></a>
+            <a href="../admin-dashboard/customers.html"><li>Customers</li></a>
+            <a href="../admin-dashboard/orders.html"> <li>Orders</li></a>
             <li><a href="#">Products</a></li>
-            <li><a href="#">Customers</a></li>
-            <li><a href="#">Settings</a></li>
+
         </ul>
     </div>
 
@@ -27,7 +28,8 @@
 
         <!-- Top Section -->
         <div class="top">
-            <h1>Orders Management</h1>
+            <h1>Orders </h1>
+            
         </div>
 
         <!-- Search & Filter Section -->
@@ -84,6 +86,28 @@
                         <td>Oval Link Necklace</td>
                         <td>2025-04-03</td>
                         <td>LE 4,934,489.00</td>
+                        <td><span class="status-delivered">Delivered</span></td>
+                        <td>
+                            <button class="action-btn delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#004</td>
+                        <td>Emma Johnson</td>
+                        <td>Oval Link Necklace</td>
+                        <td>2025-04-04</td>
+                        <td>LE 4,670,489.00</td>
+                        <td><span class="status-delivered">Delivered</span></td>
+                        <td>
+                            <button class="action-btn delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#005</td>
+                        <td>Olivia Smith</td>
+                        <td>Oval Link Necklace</td>
+                        <td>2025-04-05</td>
+                        <td>LE 7,978,677.00</td>
                         <td><span class="status-delivered">Delivered</span></td>
                         <td>
                             <button class="action-btn delete-btn">Delete</button>
