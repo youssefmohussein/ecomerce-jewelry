@@ -47,6 +47,7 @@
     border-top: 5px;
     border-right: 5px;
     border-color: white;
+    z-index: 10; 
 
 }
 
@@ -316,7 +317,7 @@
     color: #b76e79;
     font-size: 50px;
     font-style: italic;
-    font-family: "SAOLDISPLAY-MEDIUM";
+    font-family: 'Laslo-Regular';
     padding-top: 70px;
     padding-bottom: 70px;
     text-align: center;
@@ -331,8 +332,9 @@
 }
 
 .heading-text {
-    margin-bottom: 20px;
-    font-size: 20px;
+    color: #b76e79;
+    margin-bottom: 80px;
+    font-size: 30px;
     font-weight: lighter;
     font-style: italic;
     font-family: 'Laslo-Regular';
@@ -346,9 +348,49 @@
 }
 
 .images img {
-    width: 560px;
-    height: 560px;
+    width: 600px;
+    height: 750px;
+    
 
+}
+
+
+.zoom-container {
+    position: relative;
+    width: 750px;
+    height: 600px; 
+    overflow: hidden; 
+    border-radius: 5px;
+    
+   
+}
+
+/* Image that acts like a video */
+.video-image {
+    width: 200%;
+    height: 200%;
+    object-fit: cover;
+     animation: zoomPan 15s infinite linear;
+    transition: transform 0.5s ease-in-out; 
+}
+
+
+@keyframes zoomPan {
+    0% {
+        transform: scale(1) translateX(3) translateY(3);
+    }
+    25% {
+        transform: scale(1) translateX(3%) translateY(4%);
+    }
+    50% {
+        transform: scale(1.1) translateX(2%) translateY(2%);
+    }
+    75% {
+        transform: scale(1.1) translateX(2%) translateY(2%);
+    }
+    100% {
+        transform: scale(1) translateX(0) translateY(0);
+    }
 }
 
 
@@ -534,6 +576,19 @@
 
 
 
+/* new malak scrollers*/
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:#b76e79;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
 
 
 

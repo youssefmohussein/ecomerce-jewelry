@@ -9,31 +9,30 @@
   <link rel="stylesheet" href="../Home page/styling.css">
   <title>Login Page </title>
   <script src="../Home page/header.js" defer></script>
+  
 </head>
 
 <body>
   <div id="header"></div>
   <div class="container" id="container">
     <div class="form-container sign-up">
-      <form>
+      <form id="signUpForm">
         <h1>Create Account</h1>
         <span>or use your email for registration</span>
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <input type="password" id="password" name="password" placeholder=" Password" required
-          oninput="confirmPassword.pattern = this.value">
-        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required
-          pattern=".{6,}">
+        <input type="text" id="name" placeholder="Name" />
+        <input type="email" id="Email" placeholder="Email"  />
+        <input type="password" id="password" name="password" placeholder=" Password" >
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" >
 
         <button>Sign Up</button>
       </form>
     </div>
     <div class="form-container sign-in">
-      <form>
+      <form id="signInForm">
         <h1>Sign In</h1>
         <span>or use your email and password</span>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
+        <input type="email" id="loginEmail" placeholder="Email"  />
+        <input type="password" id="loginPassword" placeholder="Password"  />
         <a href="forgetpassword.html">Forget Your Password?</a>
         <button>Sign In</button>
       </form>
