@@ -14,7 +14,7 @@ body {
     text-align: center;
 }
 
-/* Main Heading */
+/* Main Heading (no changes to this) */
 .container h1 {
     font-size: 3rem;
     text-align: center;
@@ -27,20 +27,29 @@ body {
 
 /* Sub Headings */
 .container h2 {
-    font-size: 2rem;
-    color: #3a3a3a;
-    font-weight: 500;
+    font-size: 1.8rem;
+    /* Adjusted font size */
+    color: #333;
+    /* Slightly darker color for a better contrast */
+    font-weight: 400;
+    /* Slightly lighter font weight */
     margin-top: 40px;
     margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    /* Changed to a serif font for a classic touch */
 }
 
 /* Paragraphs */
 .container p {
-    font-size: 1.1rem;
-    color: #555;
+    font-size: 1.2rem;
+    /* Increased the size for readability */
+    color: #4a4a4a;
+    /* Softer color for text */
     max-width: 900px;
     margin: 0 auto 30px;
     text-align: center;
+    font-family: 'Arial', sans-serif;
+    /* Changed to a cleaner sans-serif font */
 }
 
 /* Layout */
@@ -67,18 +76,10 @@ body {
 
 .about-text p {
     text-align: left;
-    font-size: 1.05rem;
-    color: #4a4a4a;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .about-text p {
-        text-align: center;
-    }
+    font-size: 1.1rem;
+    /* Adjusted the size */
+    color: #555;
+    /* A softer color for better readability */
+    font-family: 'Verdana', sans-serif;
+    /* Changed font for easier reading */
 }
