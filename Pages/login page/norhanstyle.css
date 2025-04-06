@@ -10,7 +10,7 @@
 
 body {
     /* More subtle gradient with softer colors */
-    background: linear-gradient(to right, #f5efe5, #e6d7c3);
+    background: linear-gradient(to right, #fdfdfd, #ffffff);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +54,7 @@ body {
 /*Styles all buttons inside the form.*/
 .container button {
     /* Softer brown that's easier on the eyes */
-    background-color: #a08676;
+    background-color: #b76e79;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -149,7 +149,7 @@ body {
 
 .toggle {
     /* Softer gradient with more muted colors */
-    background: linear-gradient(to right, #b8a090, #897264);
+    background: linear-gradient(to right, #b76e79, #dc8f9a);
     color: #fff;
     position: relative;
     left: -100%;
@@ -223,7 +223,7 @@ body {
 .reset-container p {
     /* Slightly darker text for better readability */
     font-size: 16px;
-    color: #555;
+    color: black;
     margin-bottom: 20px;
 }
 
@@ -246,7 +246,7 @@ body {
     width: 100%;
     padding: 12px;
     /* Softer brown */
-    background: #a08676;
+    background: #b76e79;
     color: white;
     font-size: 14px;
     font-weight: 600;
@@ -257,16 +257,12 @@ body {
     transition: 0.3s;
 }
 
-/* Button Hover Effect */
-.reset-container button:hover {
-    /* Slightly darker but still soft */
-    background: #8a7363;
-}
+
 
 /* Centering Reset Password Page */
 body.reset {
     /* Matching the main body gradient */
-    background: linear-gradient(to right, #f5efe5, #e6d7c3);
+    background: linear-gradient(to right, #fdfdfd, #ffffff);
     display: flex;
     align-items: center;
     justify-content: center;

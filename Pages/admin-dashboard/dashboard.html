@@ -26,19 +26,19 @@
     <div class="cards">
       <div class="card purble">
         <h3>New Users</h3>
-        <p>8,267</p>
+        <p>7</p>
       </div>
       <div class="card blue">
         <h3>Total Orders</h3>
-        <p>200,521</p>
+        <p>4</p>
       </div>
       <div class="card pink">
         <h3>Products Sold</h3>
-        <p>215,542</p>
+        <p>6</p>
       </div>
       <div class="card lightblue">
         <h3>This Month</h3>
-        <p>$677.89</p>
+        <p>9.000.000 EGP</p>
       </div>
     </div>
 
@@ -46,51 +46,93 @@
       <table>
           <tr>
             <th>Name</th>
+            <th>Email</th>
             <th>Status</th>
             <th>Role</th>
             <th>Action</th>
           </tr>
           <tr>
             <td>Norhan Khaled</td>
-            <td><span class="status">Active</span></td>
+            <td>Norhan@gmail.com</td>
+            <td><span class="status active" onclick="toggleStatus(this)">Active</span></td>
             <td>Admin</td>
-            <td><span class="edit  delete" >Edit   Delete</span></td>
+            <!-- <td><span class="edit  " >Edit   </span></td> -->
+            <td><span class="delete" onclick="deleteRow(this)">Delete</span></td>
+
 
 
           </tr>
           <tr>
             <td>Malak Mostafa</td>
-            <td><span class="status">Active</span></td>
+            <td>Malak@gmail.com</td>
+
+            <td><span class="status active" onclick="toggleStatus(this)">Active</span></td>
+
             <td>Admin</td>
-            <td><span class="edit  delete" >Edit   Delete</span></td>
+            <!-- <td><span class="edit  " >Edit   </span></td> -->
+            <td><span class="delete  " >Delete   </span></td>
+
 
 
           </tr>
           <tr>
             <td>youssef Mohmed</td>
-            <td><span class="status">Active</span></td>
+            <td>youssef@gmail.com</td>
+
+            <td><span class="status active" onclick="toggleStatus(this)">Active</span></td>
+
             <td>Admin</td>
-            <td><span class="edit  delete" >Edit   Delete</span></td>
+            <!-- <td><span class="edit  " >Edit  </span></td> -->
+            <td><span class="delete  " >Delete   </span></td>
+
 
 
           </tr>
           <tr>
             <td>Roaa Hassan</td>
-            <td><span class="status">Active</span></td>
+            <td>Roaa@gmail.com</td>
+
+            <td><span class="status active" onclick="toggleStatus(this)">Active</span></td>
+
             <td>Admin</td>
-            <td><span class="edit  delete" >Edit   Delete</span></td>
+            <!-- <td><span class="edit  " >Edit   </span></td> -->
+            <td><span class="delete  " >Delete   </span></td>
+
 
 
           </tr>
           <tr>
             <td>Jana Tamer</td>
-            <td><span class="status">Active</span></td>
+            <td>Jana@gmail.com</td>
+
+            <td><span class="status active" onclick="toggleStatus(this)">Active</span></td>
             <td>Admin</td>
-            <td><span class="edit  delete" >Edit Delete</span></td>
+            <!-- <td><span class="edit  " >Edit </span></td> -->
+            <td><span class="delete  " >Delete   </span></td>
+
 
           </tr>
       </table>
     </div>
   </div>
+
+  <script>
+    function toggleStatus(element) {
+      if (element.classList.contains('active')) {
+        element.classList.remove('active');
+        element.classList.add('inactive');
+        element.textContent = 'Deactive';
+      } else {
+        element.classList.remove('inactive');
+        element.classList.add('active');
+        element.textContent = 'Active';
+      }
+    }
+   
+    function deleteRow(element) {
+      var row = element.closest('tr');  // Get the closest row (tr)
+      row.remove();  // Remove the row from the table
+    }
+  </script>
 </body>
 </html>
