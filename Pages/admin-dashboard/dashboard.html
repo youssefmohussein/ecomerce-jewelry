@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="admin.css" />
 </head>
 <body>
+  <script src="dashboard.js"></script>
   <div class="sidebar">
     <h2>Velora</h2>
     <hr>
@@ -17,9 +18,7 @@
       <a href="../admin-dashboard/orders.html"> <li>Orders</li></a>
       <li><a href="#">Products</a></li>
 
-      <a href="../admin-dashboard/orders.html"><li>orders</li></a>
 
-  
     </ul>
   </div>
 
@@ -75,7 +74,8 @@
 
             <td>Admin</td>
             <!-- <td><span class="edit  " >Edit   </span></td> -->
-            <td><span class="delete  " >Delete   </span></td>
+            <td><span class="delete" onclick="deleteRow(this)">Delete</span></td>
+
 
 
 
@@ -88,7 +88,8 @@
 
             <td>Admin</td>
             <!-- <td><span class="edit  " >Edit  </span></td> -->
-            <td><span class="delete  " >Delete   </span></td>
+            <td><span class="delete" onclick="deleteRow(this)">Delete</span></td>
+
 
 
 
@@ -101,7 +102,8 @@
 
             <td>Admin</td>
             <!-- <td><span class="edit  " >Edit   </span></td> -->
-            <td><span class="delete  " >Delete   </span></td>
+            <td><span class="delete" onclick="deleteRow(this)">Delete</span></td>
+
 
 
 
@@ -113,7 +115,8 @@
             <td><span class="status active" onclick="toggleStatus(this)">Active</span></td>
             <td>Admin</td>
             <!-- <td><span class="edit  " >Edit </span></td> -->
-            <td><span class="delete  " >Delete   </span></td>
+            <td><span class="delete" onclick="deleteRow(this)">Delete</span></td>
+
 
 
           </tr>
@@ -121,7 +124,7 @@
     </div>
   </div>
 
-          <script src="dashboard.js"></script>
+        
 
 
 </body>
