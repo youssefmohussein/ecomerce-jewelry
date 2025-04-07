@@ -107,14 +107,16 @@
     padding: 12px ;
     border-bottom: 1px solid #eee;
   }
-  
   /* .status {
+/*   
+  .status {
     color: green;
     font-weight: bold;
     background: #d3f9d8;
     padding: 5px 10px;
     border-radius: 5px;
   } */
+   
   
   .edit {
     color: blue;
@@ -250,6 +252,9 @@ td {
   border-bottom: 1px solid #eee;
 }
 
+
+
+
 .status , .status-shipped{
   color: green;
   font-weight: bold;
@@ -257,10 +262,21 @@ td {
   padding: 5px 10px;
   border-radius: 5px;
 }
+.active{
+  color: green;
+}
+.inactive{
+  color: red;
+  background: #f9d3d3;;
+}
+
 
 .edit {
   color: blue;
   cursor: pointer;
+}
+.delete{
+  color: red;
 }
 
 /* customerrr newww*/
@@ -364,7 +380,7 @@ a:hover {
 .view-btn:hover {
   background-color: #218838;
 }
-.delete {
+/* .delete {
   color: red;
   cursor: pointer;
   font-weight: bold;
@@ -373,11 +389,12 @@ a:hover {
   border-radius: 5px;
   background-color: #ffe5e5;
   transition: background-color 0.3s ease, color 0.3s ease;
-}
+} */
 
-.delete:hover {
+/* .delete:hover {
   background-color: red;
   color: white;
+<<<<<<< HEAD
 }
 
 
@@ -501,3 +518,6 @@ th, td {
 .Edit:hover{
   color: rgb(6, 6, 45);
 }
+=======
+} */
+>>>>>>> c2cdfad514086d016175d41706bbec7a40a17dec
