@@ -135,7 +135,8 @@ body {
     margin-right: 5px;
 }
 
-.price-box {
+.product-price {
+    text-decoration:none;
     box-shadow: none !important;
     background: none !important; /* optional, in case it's applying a background too */
 }

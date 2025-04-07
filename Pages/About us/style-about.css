@@ -1,73 +1,85 @@
-/* Global Styles */
+/* Base Setup */
+
 body {
-    background: rgb(255, 253, 243);
-    line-height: 1.6;
+    background-color: #fffdf3;
+    font-family: 'Playfair Display', serif;
+    color: #2f2f2f;
 }
 
 /* Container */
-.container ,.containerr {
+.container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* About Section */
-.about,.contact {
-    padding: 80px 0;
-}
-
-.contact{
-    padding-top: 40px;
-}
-
-
-/* Headings */
-.container h1,.containerr h1 {
-    font-size: 40px;
-    font-weight: 300;
+    padding: 170px 24px;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: -20px;
-    color: black;
 }
 
+/* Main Heading (no changes to this) */
+.container h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #111;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    margin-left: 100px;
+}
 
-h2 {
+/* Sub Headings */
+.container h2 {
     font-size: 1.8rem;
-    font-weight: 300;
-    margin-top: 50px;
+    /* Adjusted font size */
+    color: #333;
+    /* Slightly darker color for a better contrast */
+    font-weight: 400;
+    /* Slightly lighter font weight */
+    margin-top: 40px;
     margin-bottom: 20px;
-    color: black;
-    text-align: center;
+    font-family: 'Georgia', serif;
+    /* Changed to a serif font for a classic touch */
 }
 
 /* Paragraphs */
-p {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    color: rgb(93, 92, 92);
-    font-size: 18px;
+.container p {
+    font-size: 1.2rem;
+    /* Increased the size for readability */
+    color: #4a4a4a;
+    /* Softer color for text */
+    max-width: 900px;
+    margin: 0 auto 30px;
     text-align: center;
+    font-family: 'Arial', sans-serif;
+    /* Changed to a cleaner sans-serif font */
 }
 
-/* About Content Layout */
-.about-content ,.about-contentt{
+/* Layout */
+.about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    margin: 60px 0;
+    align-items: center;
+    gap: 50px;
+    margin-top: 60px;
 }
 
 /* Image Styling */
-.about-img,.about-imgg {
+.about-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* About Text Section */
-.about-text ,.about-textt{
-    padding: 20px;
+/* Text Section */
+.about-text {
+    text-align: left;
 }
 
-
+.about-text p {
+    text-align: left;
+    font-size: 1.1rem;
+    /* Adjusted the size */
+    color: #555;
+    /* A softer color for better readability */
+    font-family: 'Verdana', sans-serif;
+    /* Changed font for easier reading */
+}
