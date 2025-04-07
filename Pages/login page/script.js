@@ -64,6 +64,8 @@ signInForm.addEventListener("submit", function (e) {
   const password = document.getElementById("loginPassword").value;
   const adminEmail = "norhan@gmail.com";
   const adminPassword = "norhan1234K";
+  const userEmail = "jana@gmail.com";
+  const Userpassword = "jana1234K";
 
   if (!email) {
     alert("Email is required!");
@@ -76,6 +78,12 @@ signInForm.addEventListener("submit", function (e) {
   }
   if (email === adminEmail && password === adminPassword) {
     window.location.href = "../admin-dashboard/dashboard.html"; 
+  
+    return;
+  }
+
+  if (email === userEmail && password === Userpassword) {
+    window.location.href = "../Home Page/homepage.html"; 
   
     return;
   }
