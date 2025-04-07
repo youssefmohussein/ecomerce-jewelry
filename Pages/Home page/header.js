@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <a href="#">Pinterest</a>
             </div>
             <div class="copyright">
-                © 2024 VITA. All rights reserved.
+                © 2024 VELORA. All rights reserved.
             </div>
 
         </div>
