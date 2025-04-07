@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products | Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+
+<body>
+  <div class="sidebar">
+    <h2>Velora</h2>
+    <hr>
+    <ul>
+      <a href="../admin-dashboard/dashboard.html"><li>Dashboard</li></a>
+      <a href="../admin-dashboard/customers.html"><li>Customers</li></a>
+      <a href="../admin-dashboard/orders.html"> <li>Orders</li></a>
+      <a href="../admin-dashboard/products.html"><li>Products</li></a>
+    </ul>
+  </div>
+
+  <div class="main">
+
+    <div class="top">
+    <h1>Product Management</h1>
+
+  </div>
+
+  <div class="cards">
+    <div class="card1">
+      <h3>Total Products</h3>
+      <p>120</p>
+    </div>
+    <div class="card2">
+      <h3>categories</h3>
+      <p>4</p>
+    </div>
+    <div class="card3">
+      <h3>New Arrivals</h3>
+      <p>5 This Week</p>
+    </div>
+  </div>
+  
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchTable()"/>
+      <select id="category-select">
+        <option>All Categories</option>
+        <option>Necklaces</option>
+        <option>Rings</option>
+        <option>Bracelets</option>
+        <option>Earrings</option>
+      </select>
+    </div>
+
+    <div class="table">
+    <table >
+        <tr>
+          <th>Product ID</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Actions</th>
+        </tr>
+      <tbody id="product-table-body">
+        <tr>
+          <td>#P001</td>
+          <td>Oval Link Necklace</td>
+          <td>Necklaces</td>
+          <td>LE 4,934,391.00</td>
+          <td>52</td>
+          <td>
+            <span class="Edit">Edit</span>
+            <span class="delete" onclick="deleteRow(this)">Delete</span>
+          </td>
+        </tr>
+        <tr>
+          <td>#P002</td>
+          <td>Bubble Mod Cuff</td>
+          <td>Bracelets</td>
+          <td>LE 120000,435.00</td>
+          <td>27</td>
+          <td>
+            <span class="Edit">Edit</span>
+            <span class="delete" onclick="deleteRow(this)">Delete</span>
+          </td>
+        </tr>
+        <tr>
+          <td>#P003</td>
+          <td>Soho Ring</td>
+          <td>Rings</td>
+          <td>LE 11,057,418.00</td>
+          <td>18</td>
+          <td>
+            <span class="Edit">Edit</span>
+            <span class="delete" onclick="deleteRow(this)">Delete</span>
+          </td>
+        </tr>
+        <tr>
+          <td>#P004</td>
+          <td>Lasso Earrings</td>
+          <td>Earrings</td>
+          <td>LE 1,002,295.00</td>
+          <td>23</td>
+          <td>
+            <span class="Edit">Edit</span>
+            <span class="delete" onclick="deleteRow(this)">Delete</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+      <script src="../admin-dashboard/Customer.js"></script>
+      <script src="../admin-dashboard/dashboard.js"></script>
+      <script src="../admin-dashboard/products.js"></script>
+  </body>
+</html>

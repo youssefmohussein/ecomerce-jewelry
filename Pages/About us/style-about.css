@@ -1,10 +1,12 @@
 /* Base Setup */
 
 body {
-    background-color: #fffdf3;
+    background-color: #ffffff;
     font-family: 'Playfair Display', serif;
     color: #2f2f2f;
 }
+
+
 
 /* Container */
 .container {
@@ -16,17 +18,20 @@ body {
 
 /* Main Heading (no changes to this) */
 .container h1 {
-    font-size: 3rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
     text-align: center;
     color: #111;
     font-weight: 600;
     margin-bottom: 30px;
     letter-spacing: 1px;
+    font-weight: 200;
+    margin-left: 100px;
 }
 
 /* Sub Headings */
 .container h2 {
-    font-size: 1.8rem;
+    font-size: 25px;
     /* Adjusted font size */
     color: #333;
     /* Slightly darker color for a better contrast */
@@ -40,7 +45,7 @@ body {
 
 /* Paragraphs */
 .container p {
-    font-size: 1.2rem;
+    font-size: 18px;
     /* Increased the size for readability */
     color: #4a4a4a;
     /* Softer color for text */
@@ -48,6 +53,8 @@ body {
     margin: 0 auto 30px;
     text-align: center;
     font-family: 'Arial', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
     /* Changed to a cleaner sans-serif font */
 }
 
@@ -66,7 +73,14 @@ body {
     height: auto;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.about-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
 
 /* Text Section */
 .about-text {
