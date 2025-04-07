@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
             </a>
             <div class="icons">
                 <a href="../login page/login page.html"><i class="fa-solid fa-user"></i></a>
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                 <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
             </div>
         </nav>
@@ -123,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <a href="#">Pinterest</a>
             </div>
             <div class="copyright">
-                © 2024 VITA. All rights reserved.
+                © 2024 VELORA. All rights reserved.
             </div>
 
         </div>
