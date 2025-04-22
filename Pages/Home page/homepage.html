@@ -9,6 +9,8 @@
     <script src="header.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <Link rel="stylesheet" href="./chatbot.css">
+</head>
 </head>
 
 <body class="homepage">
@@ -148,10 +150,26 @@
     </section>
 
 
-    <button id="scroll-to-top" style="display:none;">↑</button>
+    <button id="openChatBtn" class="open-chat-btn">Chat with us</button>
+
+    <!-- Chat container (hidden initially) -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <h3>Chatbot</h3>
+            <button id="closeChatBtn" class="close-chat-btn">X</button>
+        </div>
+        <div class="chat-window" id="chatWindow">
+            <!-- Chat messages will appear here -->
+        </div>
+        <form id="chatForm">
+            <input type="text" id="userInput" placeholder="Type a message..." required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="chatbot.js"></script>
 
     <!-- footer -->
-
     <div id="footer"> </div>
 
 
