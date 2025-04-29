@@ -19,6 +19,12 @@
   margin-top: 0px;
 }
 
+.background-imgg img {
+  width: 100%;
+  height: 625px;
+  object-fit: cover;
+  display: block;
+}
 .background-img img {
   width: 100%;
   height: 100%;
@@ -28,16 +34,26 @@
 
 .background-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 43%;
+  left: 51.1%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 45px;
-  font-weight: bold;
-  font-family: adobe-caslon-pro, sans-serif;
+  font-size: 36px;
+  font-family: 'SAOLDISPLAY-MEDIUM';
   margin-right: 0px;
 }
 
+.text{
+  position: absolute;
+  top: 55%;
+  left: 51.5%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  font-family: 'SAOLDISPLAY-MEDIUM';
+  margin-right: 0px;
+  text-align: center;
+}
 
 .product-spacerow {
   width: 100%;
@@ -83,7 +99,14 @@
 .product-price {
   color: rgb(170, 170, 170);
   padding-left: 165px;
+  text-decoration: none;
 }
+
+.product-price:hover {
+  background: none !important;
+  box-shadow: none !important;
+}
+
 
 .product-preview {
   width: 400px;
