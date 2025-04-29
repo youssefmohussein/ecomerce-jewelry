@@ -43,6 +43,7 @@
   width: 100%;
   padding-left: 34px;
   margin-bottom: 5px;
+  position: relative;
 }
 
 .product1-name,
@@ -124,3 +125,6 @@
 .product-grid .product-spacerow {
   padding-left: 70px;
 }
+
+
+
