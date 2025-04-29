@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </a>
             <div class="icons">
                 <a href="../login page/login page.html"><i class="fa-solid fa-user"></i></a>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="../Add to cart/Add-to-cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
             </div>
         </nav>
     `;
