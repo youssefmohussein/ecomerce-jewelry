@@ -1,6 +1,6 @@
 /* ========== Global Styles ========== */
 * {
-    font-family: sans-serif;
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -33,14 +33,15 @@ button,
     justify-content: center;
     gap: 150px;
     background-color: white;
-    padding: 200px;
+    padding: 100px 50px;
 }
 
 /* ========== Image Containers ========== */
 .product-bracelet-img,
 .product-earings-image,
 .product-ring-image,
-.product-necklace-image {
+.product-necklace-image,
+.product-minimal-image {
     width: 40%;
     display: flex;
     justify-content: center;
@@ -55,7 +56,8 @@ button,
 .product-bracelet-img img,
 .product-earings-image img,
 .product-ring-image img,
-.product-necklace-image img {
+.product-necklace-image img,
+.product-minimal-image img {
     width: 150%;
     display: block;
     position: relative;
@@ -67,19 +69,23 @@ button,
     max-width: 400px;
     color: black;
     position: relative;
-    top: -100px;
+    top: -180px;
 }
 
 .pdetails h2 {
+    font-family: 'SAOLDISPLAY-MEDIUM';
     font-size: 28px;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    font-weight: 200;
 }
 
 .pdetails p {
     font-size: 18px;
     margin-bottom: 10px;
     padding-bottom: 20px;
+    font-family: initial;
+
 }
 
 .pdetails details {
@@ -87,16 +93,38 @@ button,
 }
 
 /* ========== Details / Summary Styling ========== */
-details {
+.Product details {
     margin-top: 15px;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.05);
+    /* slightly darker so it shows */
     border-radius: 5px;
-    color: rgb(45, 41, 41);
+    color: #2d2929;
+    word-spacing: 1px;
 }
 
-details summary:hover {
+.Product details summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.Product details summary:hover {
     color: black;
+}
+
+.pdetails details p {
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+    padding: 10px;
+    line-height: 1.6;
+    background: #f9f9f9;
 }
 
 details[open] {
@@ -178,13 +206,82 @@ details[open] {
     border: 2px solid #333;
 }
 
-/* ========== Extra ========== */
-.pdetails .pd {
+/* YOU MAY ALSO LIKE */
+.like {
+    text-align: center;
     font-family: 'SAOLDISPLAY-MEDIUM';
-    font-size: 14px;
-    color: #555;
-    margin: 10px 0;
-    padding: 10px;
-    line-height: 1.6;
-    background: #f9f9f9;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.related-products {
+    margin-top: -200px;
+}
+
+.product-spacerow {
+    width: 100%;
+    padding-left: 34px;
+    margin-bottom: 5px;
+}
+
+.product1-name,
+.product2-name,
+.product3-name {
+    font-size: 17px;
+    margin: auto;
+    font-weight: 500;
+    line-height: 20px;
+    color: black;
+    padding-left: 0px;
+    margin-left: 0px;
+    font-family: adobe-caslon-pro, sans-serif;
+
+}
+
+.product-price {
+    color: rgb(170, 170, 170);
+    padding-left: 165px;
+}
+
+.product-preview {
+    width: 400px;
+    display: inline-block;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-1,
+.product-2,
+.product-3 {
+    padding-left: 0px;
+    width: 400px;
+    padding-right: 40px;
+    margin-right: 0%;
+}
+
+.product-info p {
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product-info {
+    margin-bottom: 80px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 40px;
+
+}
+
+.product-grid .product-spacerow {
+    padding-left: 70px;
 }
