@@ -41,8 +41,8 @@ button,
 .product-earings-image,
 .product-ring-image,
 .product-necklace-image,
-.product-minimal-image ,
-.product-motif-image{
+.product-minimal-image,
+.product-motif-image {
     width: 40%;
     display: flex;
     justify-content: center;
@@ -192,7 +192,8 @@ details[open] {
     transition: 0.3s;
 }
 
-.white {
+.white,
+.WOBR {
     background: white;
 }
 
@@ -200,9 +201,15 @@ details[open] {
     background: darkgreen;
 }
 
+.BOBR,
 .black {
     background: black;
 }
+
+.BLOBR {
+    background: turquoise;
+}
+
 
 .color-swatch.active {
     border: 2px solid #333;
@@ -214,7 +221,7 @@ details[open] {
     font-family: 'SAOLDISPLAY-MEDIUM';
     font-size: 35px;
     font-weight: 200;
-    
+
 }
 
 .related-products {
@@ -250,8 +257,8 @@ details[open] {
 .product-price:hover {
     background: none !important;
     box-shadow: none !important;
-  }
-  
+}
+
 .product-preview {
     width: 400px;
     display: inline-block;
@@ -293,4 +300,38 @@ details[open] {
 
 .product-grid .product-spacerow {
     padding-left: 70px;
+}
+
+
+/* products change */
+.product-gallery {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnails .thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.thumbnails .thumb.active {
+    border: 2px solid #a94f58;
+}
+
+.main-image img {
+    width: 650px;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
 }
