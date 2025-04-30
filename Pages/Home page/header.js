@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </a>
             <div class="icons">
                 <a href="../login page/login page.html"><i class="fa-solid fa-user"></i></a>
-                <a href="../Add to cart/Add-to-cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
             </div>
         </nav>
     `;
@@ -137,17 +137,16 @@ document.addEventListener("DOMContentLoaded", function () {
 /* malak js scoller */
 window.onscroll = function () {
     var button = document.getElementById("scroll-to-top");
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) { // lw nzl akter mn 200 px , lw et7a22 yb2a e3ml display ll button 
-         // lkol element in the body || w el tani llgzr el asas ll safha kolaha 
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         button.style.display = "block";
     } else {
         button.style.display = "none";
     }
 };
 
-document.getElementById("scroll-to-top").addEventListener("click", function () { // lma badoos 3la el button da by3ml el function 
-    window.scrollTo({ top: 0, behavior: "smooth" }); // b5ali el haraka na3ma msh fag2a + eno yroo7 ll top 
-}); // el window di 34an tt7akm feeh 
+document.getElementById("scroll-to-top").addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
 
 

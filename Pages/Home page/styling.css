@@ -36,7 +36,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 23px 40px;
     justify-content: space-between;
     transition: background-color .5s ease-in-out;
     border-style: outset;
@@ -85,7 +85,7 @@
     /* Elegant spacing */
     /* Soft glow effect */
     word-spacing: 10px;
-    margin-right: 120px;
+    padding-right: 35px;
     color: #b76e79;
     /* Deep black for contrast */
     text-shadow: 1px 1px 3px #b76e79;
@@ -104,7 +104,6 @@
     /* Deep black for contrast */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     padding-right: 5px;
-    margin-right: 110px;
 }
 
 .logo {
@@ -461,17 +460,17 @@
 /* About Section */
 .workshop-content {
     padding: 80px;
-
+   
 
 }
 
 
 /* Headings */
 .container-workshop h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 300;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: -20px;
     color: black;
     font-family: 'Laslo-Regular';
@@ -480,7 +479,7 @@
 .container-workshop p {
     margin-top: 40px;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     font-style: italic;
     font-family: 'Laslo-Regular';
@@ -506,10 +505,10 @@
     text-align: left;
     font-style: italic;
     font-family: 'Laslo-Regular';
-    line-height: 1.4;
-
-
-
+    line-height: 1.4;  
+    
+   
+   
 }
 
 
@@ -537,8 +536,8 @@
     text-align: left;
     font-style: italic;
     font-family: 'Laslo-Regular';
-    line-height: 1.7;
-
+     line-height: 1.7;  
+      
 
 }
 
