@@ -38,7 +38,7 @@ body {
   padding: 32px;
   border: 1px solid #ddd;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 /* Form Groups */
@@ -89,7 +89,7 @@ body {
 .buttonCheckout {
   width: 100%;
   padding: 16px;
-  background-color: #000;
+  background-color: #0f6828;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -102,3 +102,4 @@ body {
 .buttonCheckout:hover {
   background-color: #222;
 }
+

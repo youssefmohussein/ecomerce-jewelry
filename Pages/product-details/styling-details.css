@@ -41,7 +41,8 @@ button,
 .product-earings-image,
 .product-ring-image,
 .product-necklace-image,
-.product-minimal-image {
+.product-minimal-image ,
+.product-motif-image{
     width: 40%;
     display: flex;
     justify-content: center;
@@ -57,11 +58,12 @@ button,
 .product-earings-image img,
 .product-ring-image img,
 .product-necklace-image img,
-.product-minimal-image img {
+.product-minimal-image img,
+.product-motif-image img {
     width: auto;
     display: block;
     position: relative;
-    top: -100px;
+    top: -65px;
 }
 
 /* ========== Product Details ========== */
@@ -69,7 +71,7 @@ button,
     max-width: 400px;
     color: black;
     position: relative;
-    top: -180px;
+    top: -60px;
 }
 
 .pdetails h2 {
