@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="../product-details/styling-details.css">
     <link rel="stylesheet" href="../Home page/styling.css">
+    <script src="./color.js" defer></script>
+    <script src="./thumbnail.js" defer></script>
     <script src="../Home page/header.js" defer></script>
     <script src="../product-details/productdetails.js"></script>
 </head>
@@ -16,16 +18,29 @@
     <div id="header"></div>
 
     <section class="Product">
-        <div class="product-minimal-image">
-            <img id="productImage" src="../collections/minmal images/Zebra Stripe Oval Light Blue.png"
-                alt="Chevron Double Buckle Bracelet">
+        <div class="product-gallery">
+            <div class="thumbnails">
+                <img src="../collections/minmal images/oval buckle/black.png" class="thumb active"
+                    data-full="../collections/minmal images/oval buckle/black.png" data-color="BOBR" alt="View 1">
+                <img src="../collections/minmal images/oval buckle/model black.png" class="thumb"
+                    data-full="../collections/minmal images/oval buckle/model black re.png" data-color="BOBR"
+                    alt="View 2">
+            </div>
+            <div class="main-image">
+                <img id="mainProductImage" src="../collections/minmal images/oval buckle/black.png" alt="Main View">
+            </div>
         </div>
 
-        <div class="pdetails">
-            <h2>Zebra Stripe Oval Buckle Ring, Light Blue Enamel</h2>
-            <p>LE 886,902.00</p>
-            <hr><br><br>
 
+        <div class="pdetails">
+            <h2>Oval Buckle Ring, Black Enamel</h2>
+            <p>LE 1,650,874.00</p>
+            <hr><br><br>
+            <div class="color-options">
+                <span class="color-swatch BOBR" data-color="BOBR"></span>
+                <span class="color-swatch BLOBR" data-color="BLOBR"></span>
+                <span class="color-swatch WOBR active" data-color="WOBR"></span>
+            </div>
             <br>
             <button id="addToCart" onclick="toggleDetails()">Add To Cart</button>
             <br><br>
