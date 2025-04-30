@@ -23,7 +23,6 @@
 
     <div class="top">
     <h1>Product Management</h1>
-    <button id="addProductBtn">Add Product</button>
 
   </div>
 
@@ -71,7 +70,6 @@
           <td>LE 4,934,391.00</td>
           <td>52</td>
           <td>
-          
             <span class="Edit">Edit</span>
             <span class="delete" onclick="deleteRow(this)">Delete</span>
           </td>
@@ -83,7 +81,6 @@
           <td>LE 120000,435.00</td>
           <td>27</td>
           <td>
-          
             <span class="Edit">Edit</span>
             <span class="delete" onclick="deleteRow(this)">Delete</span>
           </td>
@@ -95,7 +92,6 @@
           <td>LE 11,057,418.00</td>
           <td>18</td>
           <td>
-         
             <span class="Edit">Edit</span>
             <span class="delete" onclick="deleteRow(this)">Delete</span>
           </td>
@@ -107,7 +103,6 @@
           <td>LE 1,002,295.00</td>
           <td>23</td>
           <td>
-          
             <span class="Edit">Edit</span>
             <span class="delete" onclick="deleteRow(this)">Delete</span>
           </td>
@@ -115,29 +110,6 @@
       </tbody>
     </table>
   </div>
-  <!-- Modal for adding a new product -->
-    <div id="addProductModal" class="modal">
-      <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
-        <h2>Add New Product</h2>
-        <form id="addProductForm">
-          <label for="productName">Product Name:</label>
-          <input type="text" id="productName" required>
-          <label for="category">Category:</label>
-          <select id="category" required>
-            <option value="Necklaces">Necklaces</option>
-            <option value="Rings">Rings</option>
-            <option value="Bracelets">Bracelets</option>
-            <option value="Earrings">Earrings</option>
-          </select>
-          <label for="price">Price:</label>
-          <input type="number" id="price" required>
-          <label for="stock">Stock:</label>
-          <input type="number" id="stock" required>
-          <button type="submit">Add Product</button>
-        </form>
-      </div>
-    </div>
 
       <script src="../admin-dashboard/Customer.js"></script>
       <script src="../admin-dashboard/dashboard.js"></script>
