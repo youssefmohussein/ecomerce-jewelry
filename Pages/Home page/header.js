@@ -137,16 +137,17 @@ document.addEventListener("DOMContentLoaded", function () {
 /* malak js scoller */
 window.onscroll = function () {
     var button = document.getElementById("scroll-to-top");
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) { // lw nzl akter mn 200 px , lw et7a22 yb2a e3ml display ll button 
+         // lkol element in the body || w el tani llgzr el asas ll safha kolaha 
         button.style.display = "block";
     } else {
         button.style.display = "none";
     }
 };
 
-document.getElementById("scroll-to-top").addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-});
+document.getElementById("scroll-to-top").addEventListener("click", function () { // lma badoos 3la el button da by3ml el function 
+    window.scrollTo({ top: 0, behavior: "smooth" }); // b5ali el haraka na3ma msh fag2a + eno yroo7 ll top 
+}); // el window di 34an tt7akm feeh 
 
 
 
