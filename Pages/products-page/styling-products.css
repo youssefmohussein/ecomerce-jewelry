@@ -25,6 +25,7 @@
   object-fit: cover;
   display: block;
 }
+
 .background-img img {
   width: 100%;
   height: 100%;
@@ -43,7 +44,7 @@
   margin-right: 0px;
 }
 
-.text{
+.text {
   position: absolute;
   top: 55%;
   left: 51.5%;
@@ -59,6 +60,7 @@
   width: 100%;
   padding-left: 34px;
   margin-bottom: 5px;
+  position: relative;
 }
 
 .product1-name,
@@ -139,7 +141,7 @@
 .product-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 50px;
+  column-gap: 20px;
   row-gap: 40px;
 
 }
@@ -147,3 +149,6 @@
 .product-grid .product-spacerow {
   padding-left: 70px;
 }
+
+
+
