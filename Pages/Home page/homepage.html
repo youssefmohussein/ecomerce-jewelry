@@ -9,7 +9,9 @@
     <script src="header.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <Link rel="stylesheet" href="./chatbot.css">
 </head>
+
 
 <body class="homepage">
     <div id="header"></div>
@@ -100,17 +102,17 @@
                 <p class="name">Rings</p>
             </div>
             <div class="jewelry-item">
-                <a href="../products-page/necklace-page.html"><img src="../images/necklace-page/necklace-background.jpg"
+                <a href="../products-page/necklace-page.html"><img src="../images/necklace-page/necklace-background2.jpg"
                         alt="Error"></a>
                 <p class="name">Necklace</p>
             </div>
             <div class="jewelry-item">
-                <a href="../products-page/earings-page.html"> <img src="../images/earrings-page/earrings background.jpg"
+                <a href="../products-page/earings-page.html"> <img src="../images/earrings-page/earings-background2.jpg"
                         alt="Error"></a>
                 <p class="name">Earrings</p>
             </div>
             <div class="jewelry-item">
-                <a href="../products-page/bracelets-page.html"> <img src="../images/bracelet-page/background.jpg"
+                <a href="../products-page/bracelets-page.html"> <img src="../images/bracelet-page/background3.jpg"
                         alt="Error"></a>
                 <p class="name">Bracelet</p>
             </div>
@@ -148,10 +150,26 @@
     </section>
 
 
-    <button id="scroll-to-top" style="display:none;">↑</button>
+    <button id="openChatBtn" class="open-chat-btn">Chat with us</button>
+
+    <!-- Chat container (hidden initially) -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <h3>Chatbot</h3>
+            <button id="closeChatBtn" class="close-chat-btn">X</button>
+        </div>
+        <div class="chat-window" id="chatWindow">
+            <!-- Chat messages will appear here -->
+        </div>
+        <form id="chatForm">
+            <input type="text" id="userInput" placeholder="Type a message..." required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="chatbot.js"></script>
 
     <!-- footer -->
-
     <div id="footer"> </div>
 
 
