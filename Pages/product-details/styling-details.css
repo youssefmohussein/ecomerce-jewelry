@@ -193,7 +193,8 @@ details[open] {
 }
 
 .white,
-.WOBR {
+.WOBR,
+.Wlane {
     background: white;
 }
 
@@ -202,14 +203,19 @@ details[open] {
 }
 
 .BOBR,
-.black {
+.black,
+.Blane {
     background: black;
 }
 
-.BLOBR {
+.BLOBR,
+.BLlane {
     background: turquoise;
 }
 
+.Plane {
+    background: #a94f58;
+}
 
 .color-swatch.active {
     border: 2px solid #333;

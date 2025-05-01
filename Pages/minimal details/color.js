@@ -3,9 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const colorSwatches = document.querySelectorAll(".color-swatch");
     const thumbnails = document.querySelectorAll(".thumb");
     const imagePaths = {
+        // oval buckle
         "WOBR": "../collections/minmal images/oval buckle/white.png",
         "BLOBR": "../collections/minmal images/oval buckle/blue.png",
-        "BOBR": "../collections/minmal images/oval buckle/black.png"
+        "BOBR": "../collections/minmal images/oval buckle/black.png",
+        // lane
+        "Wlane": "../collections/minmal images/lane bracelete/Lane Light white.png",
+        "Plane": "../collections/minmal images/lane bracelete/Lane Light Pink.png",
+        "Blane": "../collections/minmal images/lane bracelete/Lane Light Black.png",
+        "BLlane": "../collections/minmal images/lane bracelete/Lane Light Blue.png",
+
     };
 
     colorSwatches.forEach(swatch => {
@@ -26,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Show only thumbnails that match the selected color
             thumbnails.forEach(thumbnail => {
-                if (thumbnail.dataset.color === selectedColor) {
+                if (thumbnail.dataset.color === selectedColor || thumbnail.dataset.color === "none") {
                     thumbnail.style.display = "block"; // Show only related thumbnails
                 }
             });
