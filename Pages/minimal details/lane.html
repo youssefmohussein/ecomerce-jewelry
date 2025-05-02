@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="../product-details/styling-details.css">
     <link rel="stylesheet" href="../Home page/styling.css">
+    <script src="./color.js" defer></script>
+    <script src="./thumbnail.js" defer></script>
     <script src="../Home page/header.js" defer></script>
     <script src="../product-details/productdetails.js"></script>
 </head>
@@ -16,16 +18,31 @@
     <div id="header"></div>
 
     <section class="Product">
-        <div class="product-minimal-image">
-            <img id="productImage" src="../collections/minmal images/Lane Bracelet Light Blue.png"
-                alt="Chevron Double Buckle Bracelet">
+        <div class="product-gallery">
+            <div class="thumbnails">
+                <img src="../collections/minmal images/lane bracelete/Lane Light Blue.png" class="thumb active"
+                    data-full="../collections/minmal images/lane bracelete/Lane Light Blue.png" data-color="none"
+                    alt="View 1">
+                <img src="../collections/minmal images/lane bracelete/Lane Light Blue model.png" class="thumb"
+                    data-full="../collections/minmal images/lane bracelete/Lane Light Blue model.png" data-color="none"
+                    alt="View 2">
+            </div>
+            <div class="main-image">
+                <img id="mainProductImage" src="../collections/minmal images/lane bracelete/Lane Light Blue.png"
+                    alt="Main View">
+            </div>
         </div>
 
         <div class="pdetails">
             <h2>Lane Bracelet, Light Blue Enamel</h2>
             <p>LE 1,727,351.00</p>
             <hr><br><br>
-
+            <div class="color-options">
+                <span class="color-swatch Wlane" data-color="Wlane"></span>
+                <span class="color-swatch Plane" data-color="Plane"></span>
+                <span class="color-swatch BLlane" data-color="BLlane"></span>
+                <span class="color-swatch Blane active" data-color="Blane"></span>
+            </div>
             <br>
             <button id="addToCart" onclick="toggleDetails()">Add To Cart</button>
             <br><br>
