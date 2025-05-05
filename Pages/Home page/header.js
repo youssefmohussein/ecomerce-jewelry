@@ -1,20 +1,43 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("header").innerHTML = `
-            <nav class="navbar">
-                <div class="navigation">
-                    <a href="#">Shop</a>
-                    <a href="../About us/about.html">About Us</a>
+           <nav class="navbar">
+    <div class="navigation">
+        <div class="dropdown">
+            <a href="#">Shop</a>
+            <div class="dropdown-content mega-menu">
+                <div class="mega-menu-column">
+                    <h3>Categories</h3>
+                    <a href="#">Nechlaces</a>
+                    <a href="#">Rings</a>
+                    <a href="#">Earrings</a>
+                    <a href="#">Bangels and Brcelets</a>
                 </div>
-                <a href="../Home page/homepage.html" class="logo">
-                    <h1>VELORA JEWEL</h1>
-                    <h2>Paris</h2>
-                </a>
-                <div class="icons">
-                    <a href="../login page/login page.html"><i class="fa-solid fa-user"></i></a>
-                    <a href="../Add to cart/Add-to-cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Collections</a>
+            <div class="dropdown-content mega-menu">
+                <div class="mega-menu-column">
+                    <h3>Collection</h3>
+                    <a href="#">Minimal</a>
+                    <a href="#">Motif</a>
+                    <a href="#">Ashville</a>
+                    <a href="#">Brocade</a>
                 </div>
-            </nav>
+            </div>
+        </div>
+        <a href="../About us/about.html">About Us</a>
+    </div>
+    <a href="../Home page/homepage.html" class="logo">
+        <h1>VELORA JEWEL</h1>
+        <h2>Paris</h2>
+    </a>
+    <div class="icons">
+        <a href="../login page/login page.html"><i class="fa-solid fa-user"></i></a>
+        <a href="../Add to cart/Add-to-cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+</nav>
         `;
 
 
@@ -112,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-/* malak js scoller */
+/* js scoller */
 window.onscroll = function () {
     var button = document.getElementById("scroll-to-top");
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) { // lw nzl akter mn 200 px , lw et7a22 yb2a e3ml display ll button 
