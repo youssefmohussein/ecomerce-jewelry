@@ -77,14 +77,14 @@ signInForm.addEventListener("submit", function (e) {
     return;
   }
   if (email === adminEmail && password === adminPassword) {
-    window.location.href = "../admin-dashboard/dashboard.html"; 
-  
+    window.location.href = "../admin-dashboard/dashboard.html";
+
     return;
   }
 
   if (email === userEmail && password === Userpassword) {
-    window.location.href = "../Home Page/homepage.html"; 
-  
+    window.location.href = "../Home Page/homepage.html";
+
     return;
   }
 
@@ -96,14 +96,14 @@ signInForm.addEventListener("submit", function (e) {
     alert("Password must be at least 8 characters and include both letters and numbers.");
     return;
   }
-  
+
   alert("Invalid credentials. Please try again");
   // signInForm.submit(); 
 });
 
 
-  // alert("Login successful!");
-  // signInForm.submit();
+// alert("Login successful!");
+// signInForm.submit();
 
 ;
 
