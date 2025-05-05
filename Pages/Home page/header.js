@@ -8,11 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="dropdown-content mega-menu">
                 <div class="mega-menu-column">
                     <h3>Categories</h3>
-                    <a href="#">Nechlaces</a>
                     <a href="#">Rings</a>
                     <a href="#">Earrings</a>
+                    <a href="">Necklaces</a>
                     <a href="#">Bangels and Brcelets</a>
                 </div>
+                <div class="mega-menu-column1">
+                        <img src="./home-images/nav1.png" alt="Jewelry 1" class="menu-image">
+                        <img src="./home-images/nav2.png" class="menu-image">
+                    </div>
             </div>
         </div>
         <div class="dropdown">
@@ -20,11 +24,15 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="dropdown-content mega-menu">
                 <div class="mega-menu-column">
                     <h3>Collection</h3>
-                    <a href="#">Minimal</a>
                     <a href="#">Motif</a>
-                    <a href="#">Ashville</a>
+                   <a href="#">Minimal</a>
                     <a href="#">Brocade</a>
+                     <a href="#">Ashville</a>
                 </div>
+                <div class="mega-menu-column1">
+                        <img src="./home-images/nav1.png" alt="Jewelry 1" class="menu-image">
+                        <img src="./home-images/nav2.png" class="menu-image">
+                    </div>
             </div>
         </div>
         <a href="../About us/about.html">About Us</a>
@@ -39,6 +47,12 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
 </nav>
         `;
+
+
+
+
+
+
 
 
 
