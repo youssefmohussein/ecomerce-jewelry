@@ -1,64 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add to Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="Add-to-cart.css">
     <link rel="stylesheet" href="../Home page/HeadFoot.css">
     <script src="../Home page/header.js" defer></script>
-    <script src="Add-to-cart.js" defer></script>
-    <script src="productdetails.js" defer></script>
 </head>
+
 <body>
     <div id="header"></div>
 
     <div class="wrapper">
-        <h1>shopping cart</h1>
+        <h1>Shopping Cart</h1>
         <div class="project">
             <div class="add">
-                <div class="box">
-                    <img src="../images/earrings-page/earrings1.png" alt="Product Image">
-                    <div class="container product-info">
-                        <p class="product1-name">Product: Double Crescent Pear Drop Earrings, Azurmalachite</p>
-                        <p class="product-price">Price: LE 2,918,933.00</p>
-                        <p class="unit">Item: <input type="number" value="1"></p>
-                        <div class="btn-area">
-                            <i class="fa fa-trash"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="box">
-                    <img id="productImage" src="../images/earrings-page/earrings2.png" alt="Product Image">
-                    <div class="container">
-                        <p class="product-info">
-                        <p class="product1-name">Product: Oval Link Earrings, Hammered Gold</p>
-                        <p class="product-price">Price: LE 1,351,813.00</p>
-                        <p class="unit">Item: <input type="number" value="0"></p>
-                        <div class="btn-area">
-                            <i class="fa fa-trash"></i>
-                        </div>
-                    </div>
-                </div>
+                <div id="cartContainer"></div> <!-- Injected content goes here -->
             </div>
 
             <div class="right-bar">
-                <p>SUMMARY: </p>
-                <p><span>Subtotal: </span> <span>LE 4,000,000.00</span></p>
+                <p>SUMMARY:</p>
+                <p><span>Subtotal: </span><span id="subtotal">LE 0</span></p>
                 <hr>
-                <p><span>Tax (15%): </span> <span>LE 70,000.00</span></p>
+                <p><span>Tax (15%): </span><span id="tax">LE 0</span></p>
                 <hr>
-                <p><span>Shipping: </span> <span>LE 5,000.00</span></p>
+                <p><span>Shipping: </span><span id="shipping">LE 0</span></p>
                 <hr>
-                <p><span>Total: </span> <span>LE 5,243,211.00</span></p>
+                <p><span>Total: </span><span id="total">LE 0</span></p>
                 <a href="../checkout page/chechout-page.html" class="buttonCheckout">CHECKOUT</a>
             </div>
         </div>
     </div>
+
+    <script src="add-to-cart.js" defer></script>
 </body>
 
 </html>
