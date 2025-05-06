@@ -1,21 +1,58 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("header").innerHTML = `
-            <nav class="navbar">
-                <div class="navigation">
-                    <a href="#">Shop</a>
-                    <a href="../About us/about.html">About Us</a>
+           <nav class="navbar">
+    <div class="navigation">
+        <div class="dropdown">
+            <a href="#">Shop</a>
+            <div class="dropdown-content mega-menu">
+                <div class="mega-menu-column">
+                    <h3>Categories</h3>
+                    <a href="#">Rings</a>
+                    <a href="#">Earrings</a>
+                    <a href="">Necklaces</a>
+                    <a href="#">Bangels and Brcelets</a>
                 </div>
-                <a href="../Home page/homepage.html" class="logo">
-                    <h1>VELORA JEWEL</h1>
-                    <h2>Paris</h2>
-                </a>
-                <div class="icons">
-                    <a href="../login page/login page.html"><i class="fa-solid fa-user"></i></a>
-                    <a href="../Add to cart/Add-to-cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <div class="mega-menu-column1">
+                        <img src="./home-images/nav1.png" alt="Jewelry 1" class="menu-image">
+                        <img src="./home-images/nav2.png" class="menu-image">
+                    </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Collections</a>
+            <div class="dropdown-content mega-menu">
+                <div class="mega-menu-column">
+                    <h3>Collection</h3>
+                    <a href="#">Motif</a>
+                   <a href="#">Minimal</a>
+                    <a href="#">Brocade</a>
+                     <a href="#">Ashville</a>
                 </div>
-            </nav>
+                <div class="mega-menu-column1">
+                        <img src="./home-images/nav1.png" alt="Jewelry 1" class="menu-image">
+                        <img src="./home-images/nav2.png" class="menu-image">
+                    </div>
+            </div>
+        </div>
+        <a href="../About us/about.html">About Us</a>
+    </div>
+    <a href="../Home page/homepage.html" class="logo">
+        <h1>VELORA JEWEL</h1>
+        <h2>Paris</h2>
+    </a>
+    <div class="icons">
+        <a href="../login page/login page.html"><i class="fa-solid fa-user"></i></a>
+        <a href="../Add to cart/Add-to-cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+</nav>
         `;
+
+
+
+
+
+
 
 
 
@@ -112,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-/* malak js scoller */
+/* js scoller */
 window.onscroll = function () {
     var button = document.getElementById("scroll-to-top");
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) { // lw nzl akter mn 200 px , lw et7a22 yb2a e3ml display ll button 

@@ -1,0 +1,27 @@
+/* Wishlist button styles */
+.wishlist-btn {
+    position:absolute;
+    top: 30px;
+    right: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0;
+    color: #666;
+}
+
+.wishlist-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.wishlist-btn.active svg {
+    stroke: red;
+    fill: red;
+}
+
+/* Make sure container has position relative */
+.product-spacerow {
+    position: relative;
+}

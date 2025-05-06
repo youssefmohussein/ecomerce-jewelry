@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="../product-details/styling-details.css">
     <script src="../Home page/header.js" defer></script>
-    <link rel="stylesheet" href="../Home page/styling.css">
+    <link rel="stylesheet" href="../Home page/HeadFoot.css">
     <script src="../product-details/productdetails.js"></script>
 
 </head>
@@ -17,26 +17,26 @@
     <div id="header"></div>
     <section class="Product">
         <div class="product-ring-image">
-            <img id="productImage" src="../images/rings-page/rings1.png" alt="Product Image">
+            <img id="productImage" src="../images/rings-page/ring11.png" alt="Product Image">
         </div>
         <div class="pdetails">
             <h2>Faceted Marquise-Cut Aquamarine Ring</h2>
             <p>LE 4,526,765.00</p>
             <hr>
             <br> <br>
-         
-            
+
+
             <br>
             <div>
-            <button id="addToCart" onclick="toggleDetails()">Add to Cart</button><br><br>
-             </div>
+                <button id="addToCart" onclick="toggleDetails()">Add to Cart</button><br><br>
+            </div>
 
             <div class="quantity-container">
                 <button class="quantity-btn decrease-btn">-</button>
                 <input type="number" class="quantity-input" value="0" min="0">
                 <button class="quantity-btn increase-btn">+</button>
             </div>
-           
+
             <details>
                 <summary>Details</summary>
                 <p>Faceted aquamarine, emerald baguettes, brilliant-cut diamonds, 18K gold, and platinum.</p>
@@ -48,6 +48,52 @@
                     original packaging and sales slip.</p>
             </details>
         </div>
+    </section>
+    <section class="related-products">
+        <h2 class="like">You May Also Like</h2>
+
+        <div class="product-grid">
+            <div class="product-preview">
+                <!-- First item -->
+                <div class="product-spacerow">
+                    <a href="./ring2.html">
+                        <img class="product-1" src="../images/rings-page/ring22.png"
+                            alt="Soho Ring">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <p class="product1-name">Soho Ring</p>
+                    <p class="product-price">LE 11,057,418.00</p>
+                </div>
+            </div>
+
+            <div class="product-preview">
+                <!-- Second item -->
+                <div class="product-spacerow">
+                    <a href="./ring3.html">
+                        <img class="product-2" src="../images/rings-page/ring33.png"
+                            alt="Fireworks Ring">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <p class="product2-name">Fireworks Ring</p>
+                    <p class="product-price">LE 4,012,202.00</p>
+                </div>
+            </div>
+
+            <div class="product-preview">
+                <!-- Third item -->
+                <div class="product-spacerow" id="x">
+                    <a href="./ring4.html">
+                        <img class="product-3" src="../images/rings-page/ring44.png"
+                            alt="Branch Ring, Emerald">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <p class="product3-name">Branch Ring, Emerald</p>
+                    <p class="product-price">LE 2,158,272.00</p>
+                </div>
+            </div>
     </section>
     <div id="footer"></div>
 </body>
