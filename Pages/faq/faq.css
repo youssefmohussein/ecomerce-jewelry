@@ -24,8 +24,8 @@ body {
 
 .faq-container h2 {
     text-align: center;
+    margin-top: -35px;
     color:  #484344;
-    margin-bottom: 10px;
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
     font-weight: bold;
@@ -50,7 +50,7 @@ body {
 
 .question {
     font-family: 'SAOLDISPLAY-MEDIUM';
-    background: #d7d2d3;
+    background: rgb(238, 238, 238);
     color: rgb(15, 14, 14);
     padding: 15px;
     cursor: pointer;

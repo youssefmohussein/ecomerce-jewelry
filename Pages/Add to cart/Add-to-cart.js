@@ -1,59 +1,70 @@
 document.addEventListener("DOMContentLoaded", function () {
-    updateTotal();
+  const cartContainer = document.querySelector(".add");
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    document.querySelectorAll(".unit input").forEach(input => {
-        input.addEventListener("change", function () {
-            if (this.value < 0) this.value = 0;
-            updateTotal();
-        });
-    });
+  // Clear any hardcoded content
+  cartContainer.innerHTML = "";
 
-    document.querySelectorAll(".btn-area").forEach(button => {
-        button.addEventListener("click", function () {
-            this.closest(".box").remove();
-            updateTotal();
-        });
+  if (cart.length === 0) {
+    cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+  } else {
+    cart.forEach((product, index) => {
+      const box = document.createElement("div");
+      box.className = "box";
+
+      box.innerHTML = `
+        <img src="../images/placeholder.png" alt="Product Image">
+        <div class="container product-info">
+          <p class="product1-name">Product: ${product.name}</p>
+          <p class="product-price">Price: LE ${product.price.toLocaleString()}</p>
+          <p class="unit">Item: <input type="number" value="${product.quantity}" data-index="${index}"></p>
+          <div class="btn-area"><i class="fa fa-trash" data-index="${index}"></i></div>
+        </div>
+      `;
+
+      cartContainer.appendChild(box);
     });
+  }
+
+  updateTotal();
+
+  // Quantity change
+  cartContainer.addEventListener("change", function (e) {
+    if (e.target.matches(".unit input")) {
+      let index = parseInt(e.target.dataset.index);
+      let value = Math.max(1, parseInt(e.target.value));
+      e.target.value = value;
+      cart[index].quantity = value;
+      localStorage.setItem("cart", JSON.stringify(cart));
+      updateTotal();
+    }
+  });
+
+  // Delete item
+  cartContainer.addEventListener("click", function (e) {
+    if (e.target.matches(".fa-trash")) {
+      let index = parseInt(e.target.dataset.index);
+      cart.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      location.reload(); // Reload to re-render cart
+    }
+  });
 });
 
 function updateTotal() {
-    let subtotal = 0;
-    document.querySelectorAll(".box").forEach(box => {
-        let priceText = box.querySelector(".product-price").textContent;
-        let price = parseFloat(priceText.replace(/[^0-9.]/g, ""));
-        let quantity = parseInt(box.querySelector(".unit input").value);
-        subtotal += price * quantity;
-    });
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let subtotal = 0;
 
-    let tax = subtotal * 0.15;
-    let shipping = subtotal > 0 ? 5000 : 0;
-    let total = subtotal + tax + shipping;
+  cart.forEach(product => {
+    subtotal += product.price * product.quantity;
+  });
 
-    document.querySelector(".right-bar p:nth-child(1) span:last-child").textContent = `LE ${subtotal.toLocaleString()}`;
-    document.querySelector(".right-bar p:nth-child(3) span:last-child").textContent = `LE ${tax.toLocaleString()}`;
-    document.querySelector(".right-bar p:nth-child(5) span:last-child").textContent = `LE ${shipping.toLocaleString()}`;
-    document.querySelector(".right-bar p:nth-child(7) span:last-child").textContent = `LE ${total.toLocaleString()}`;
+  let tax = subtotal * 0.15;
+  let shipping = subtotal > 0 ? 5000 : 0;
+  let total = subtotal + tax + shipping;
+
+  document.querySelector(".right-bar p:nth-child(2) span:last-child").textContent = `LE ${subtotal.toLocaleString()}`;
+  document.querySelector(".right-bar p:nth-child(4) span:last-child").textContent = `LE ${tax.toLocaleString()}`;
+  document.querySelector(".right-bar p:nth-child(6) span:last-child").textContent = `LE ${shipping.toLocaleString()}`;
+  document.querySelector(".right-bar p:nth-child(8) span:last-child").textContent = `LE ${total.toLocaleString()}`;
 }
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const cartContainer = document.getElementById("cart-items");
-
-    cart.forEach(product => {
-        const box = document.createElement("div");
-        box.classList.add("box");
-        box.innerHTML = `
-            <div class="product-name">${product.name}</div>
-            <div class="product-price">LE ${product.price}</div>
-            <div class="unit"><input type="number" value="${product.quantity}"></div>
-            <div class="btn-area">Remove</div>
-        `;
-        cartContainer.appendChild(box);
-    });
-
-    // Call updateTotal() here
-    updateTotal();
-
-    // Add your existing quantity change and remove event listeners here...
-});
