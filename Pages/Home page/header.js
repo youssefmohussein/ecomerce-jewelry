@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="dropdown-content mega-menu">
                 <div class="mega-menu-column">
                     <h3>Categories</h3>
-                    <a href="#">Nechlaces</a>
-                    <a href="#">Rings</a>
-                    <a href="#">Earrings</a>
-                    <a href="#">Bangels and Brcelets</a>
+                    <a href="../products-page/necklace-page.html">Nechlaces</a>
+                    <a href="../products-page/ring-page.html">Rings</a>
+                    <a href="../products-page/earings-page.html">Earrings</a>
+                    <a href="../products-page/bracelets-page.html">Bangels and Brcelets</a>
                 </div>
             </div>
         </div>
@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="dropdown-content mega-menu">
                 <div class="mega-menu-column">
                     <h3>Collection</h3>
-                    <a href="#">Minimal</a>
-                    <a href="#">Motif</a>
-                    <a href="#">Ashville</a>
-                    <a href="#">Brocade</a>
+                    <a href="../collections/minimal.html">Minimal</a>
+                    <a href="../collections/motif.html">Motif</a>
+                    <a href="../collections/asheville.html">Asheville</a>
+                    <a href="../collections/Brocade.html">Brocade</a>
                 </div>
             </div>
         </div>
@@ -33,15 +33,41 @@ document.addEventListener("DOMContentLoaded", function () {
         <h1>VELORA JEWEL</h1>
         <h2>Paris</h2>
     </a>
-    <div class="icons">
-        <a href="../login page/login page.html"><i class="fa-solid fa-user"></i></a>
-        <a href="../Add to cart/Add-to-cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+  
+<div class="icons">
+  <!-- Search Dropdown Wrapper -->
+  <div class="dropdown-wrapper" id="dropdownWrapper">
+    <i class="fa-solid fa-magnifying-glass search-button" id="searchBtn"></i>
+
+    <div class="dropdown-menu" id="dropdownMenu">
+      <div class="dropdown-header">
+       <input type="text" id="text" placeholder="Search..." />
+        <i class="fa-solid fa-xmark close-button" id="closeBtn"></i>
+      </div>
     </div>
-</nav>
+  </div>
+
+  <!-- Other icons -->
+  <a href="../login page/login page.html"><i class="fa-solid fa-user"></i></a>
+  <a href="../Add to cart/Add-to-cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+</div>
         `;
 
 
 
+        // Toggle header/dropdown on search button click
+document.querySelector('.search-button').addEventListener('click', function() {
+    document.querySelector('.navbar').classList.toggle('search-active');
+  });
+  
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function(e) {
+    const navbar = document.querySelector('.navbar');
+    if (!e.target.closest('.search-button, .search-dropdown')) {
+        navbar.classList.remove('search-active');
+    }
+  });
+  
 
     let lastScrollTop = 0; // Stores the last scroll position
     const navbar = document.querySelector(".navbar"); // Selects the navbar element

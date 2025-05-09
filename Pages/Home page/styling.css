@@ -60,6 +60,26 @@
     background-color: white;
 }
 
+/* Default header */
+.navbar { 
+    background-color: transparent; 
+}
+
+/* Active state (white header + dropdown) */
+.navbar.search-active {
+  background-color: #fff !important;
+  position: sticky;
+}
+
+/* Hide/show dropdown */
+.search-dropdown {
+     display: none;
+ }
+
+.navbar.search-active .search-dropdown {
+     display: block; 
+}
+
 .navigation {
     display: flex;
     align-items: center;
