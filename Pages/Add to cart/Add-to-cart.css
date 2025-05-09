@@ -3,28 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-.navbar:hover{
-    background-color: rgba(228, 224, 224, 0.366);
-}
 
 body {
-    font-family: montserrat, sans-serif;
-    background: rgba(255, 254, 254, 0.9);
+    font-family: 'SAOLDISPLAY-MEDIUM';
+    background-color: #fdfaf5;
     scroll-behavior: smooth;
 }
 
 .wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
+    margin-top: 110px;
+    margin-left: 150px;
+    max-width: 1200px;
 }
+/* hiii */
 
 .wrapper h1 {
-    font-family: 'SAOLDISPLAY-MEDIUM';
-    color: rgb(78, 77, 77);
-    margin-left: 50px;
-    margin-bottom: -120px;
-    padding: 140px;
+    color: #353433;
     text-align: center;
+    padding: 30px;
     text-transform: uppercase;
 }
 
@@ -32,21 +28,23 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px; /* Adds space between the two sections */
+    gap: 20px;
 }
 
 .add {
-    flex: 2; /* Makes the left section (add-to-cart items) take more space */
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
 }
 
 .right-bar {
-    flex: 1; /* Makes the right-bar section take less space */
-    padding: 20px;
+    flex: 1;
+    padding: 45px;
+    margin-left: 40px;
     height: auto;
-    min-width: 250px;
-    border-radius: 5px;
+    border-radius: 20px;
     background: #fff;
-    box-shadow: rgba(100,100,111,0.2) 0 7px 29px 0;
+    box-shadow: rgba(208, 208, 211, 0.2) 0 7px 29px 0;
 }
 
 .box {
@@ -55,12 +53,10 @@ body {
     align-items: center;
     width: 600px;
     height: 190px;
+    margin-left: 18px;
     margin-bottom: 20px;
     background: #ffffff;
-    transition: all 0.3s ease-in-out;
-    box-shadow: rgba(51, 51, 55, 0.2) 0 7px 29px 0;
     padding: 10px;
-    border-radius: 8px;
 }
 
 .box img {
@@ -73,6 +69,7 @@ body {
 .container {
     flex-grow: 1;
     text-align: left;
+    padding-left: 15px;
 }
 
 .right-bar hr {
@@ -87,66 +84,74 @@ body {
 }
 
 .right-bar a {
-    background-color: #333938;
+    background-color: #212322;
     color: #fff;
     display: block;
     text-align: center;
     height: 50px;
     line-height: 50px;
     font-weight: 900;
-    border-radius: 10px;
+    border-radius: 40px;
     font-size: 18px;
-    transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 .right-bar a:hover {
     background-color: #413e3e;
 }
 
+/* Input Spinner Styling */
 .unit input {
     width: 55px;
-    height: 20px;
+    height: 30px;
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 5px;
+
+    appearance: auto;
+    -moz-appearance: textfield;
 }
 
+.unit input::-webkit-outer-spin-button,
+.unit input::-webkit-inner-spin-button {
+    -webkit-appearance: auto;
+    margin: 0;
+}
+
+/* Trash icon styles */
 .btn-area {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    padding: 8px 15px;
-    background-color: #413e3e;
-    color: #fff;
-    border-radius: 10px;
-    font-weight: 500;
-    cursor: pointer;
+    background-color: white;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .btn-area:hover {
-    background-color: #55585a;
-    color: #fff;
+    background-color: rgb(252, 252, 252);
 }
 
 .btn-area i {
-    margin-right: 5px;
+    color: red;
 }
 
 .product-price {
-    text-decoration:none;
+    text-decoration: none !important;
     box-shadow: none !important;
     background: none !important; /* optional, in case it's applying a background too */
 }
 
-
-
-/* Responsive design for smaller screens */
+/* Responsive */
 @media screen and (max-width: 700px) {
     .project {
-        flex-direction: column; /* Stacks the sections vertically on smaller screens */
+        flex-direction: column;
     }
 
     .right-bar {

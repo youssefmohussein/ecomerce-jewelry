@@ -1,59 +1,45 @@
 document.addEventListener("DOMContentLoaded", function () {
-    updateTotal();
+  const cartContainer = document.getElementById("cartContainer");
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let subtotal = 0;
 
-    document.querySelectorAll(".unit input").forEach(input => {
-        input.addEventListener("change", function () {
-            if (this.value < 0) this.value = 0;
-            updateTotal();
-        });
-    });
+  if (cart.length === 0) {
+    cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+    return;
+  }
 
-    document.querySelectorAll(".btn-area").forEach(button => {
-        button.addEventListener("click", function () {
-            this.closest(".box").remove();
-            updateTotal();
-        });
-    });
+  cart.forEach(item => {
+    const itemTotal = item.price * item.quantity;
+    subtotal += itemTotal;
+
+    const box = document.createElement("div");
+    box.classList.add("box");
+    box.innerHTML = `
+      <img src="${item.image}" alt="${item.name}">
+      <div class="container product-info">
+        <p class="product1-name">Product: ${item.name}</p>
+        <p class="product-price">Price: LE ${item.price.toLocaleString()}</p>
+        <p class="unit">Quantity: ${item.quantity}</p>
+        <div class="btn-area">
+          <i class="fa fa-trash" onclick="removeFromCart('${item.name}')"></i>
+        </div>
+      </div>`;
+    cartContainer.appendChild(box);
+  });
+
+  const tax = subtotal * 0.15;
+  const shipping = subtotal > 0 ? 5000 : 0;
+  const total = subtotal + tax + shipping;
+
+  document.getElementById("subtotal").textContent = `LE ${subtotal.toLocaleString()}`;
+  document.getElementById("tax").textContent = `LE ${tax.toLocaleString()}`;
+  document.getElementById("shipping").textContent = `LE ${shipping.toLocaleString()}`;
+  document.getElementById("total").textContent = `LE ${total.toLocaleString()}`;
 });
 
-function updateTotal() {
-    let subtotal = 0;
-    document.querySelectorAll(".box").forEach(box => {
-        let priceText = box.querySelector(".product-price").textContent;
-        let price = parseFloat(priceText.replace(/[^0-9.]/g, ""));
-        let quantity = parseInt(box.querySelector(".unit input").value);
-        subtotal += price * quantity;
-    });
-
-    let tax = subtotal * 0.15;
-    let shipping = subtotal > 0 ? 5000 : 0;
-    let total = subtotal + tax + shipping;
-
-    document.querySelector(".right-bar p:nth-child(1) span:last-child").textContent = `LE ${subtotal.toLocaleString()}`;
-    document.querySelector(".right-bar p:nth-child(3) span:last-child").textContent = `LE ${tax.toLocaleString()}`;
-    document.querySelector(".right-bar p:nth-child(5) span:last-child").textContent = `LE ${shipping.toLocaleString()}`;
-    document.querySelector(".right-bar p:nth-child(7) span:last-child").textContent = `LE ${total.toLocaleString()}`;
+function removeFromCart(name) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart = cart.filter(item => item.name !== name);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  window.location.reload();
 }
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const cartContainer = document.getElementById("cart-items");
-
-    cart.forEach(product => {
-        const box = document.createElement("div");
-        box.classList.add("box");
-        box.innerHTML = `
-            <div class="product-name">${product.name}</div>
-            <div class="product-price">LE ${product.price}</div>
-            <div class="unit"><input type="number" value="${product.quantity}"></div>
-            <div class="btn-area">Remove</div>
-        `;
-        cartContainer.appendChild(box);
-    });
-
-    // Call updateTotal() here
-    updateTotal();
-
-    // Add your existing quantity change and remove event listeners here...
-});

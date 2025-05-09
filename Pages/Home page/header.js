@@ -12,7 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="../products-page/ring-page.html">Rings</a>
                     <a href="../products-page/earings-page.html">Earrings</a>
                     <a href="../products-page/bracelets-page.html">Bangels and Brcelets</a>
+                    <a href="#">Rings</a>
+                    <a href="#">Earrings</a>
+                    <a href="">Necklaces</a>
+                    <a href="#">Bangels and Brcelets</a>
                 </div>
+                <div class="mega-menu-column1">
+                        <img src="./home-images/nav1.png" alt="Jewelry 1" class="menu-image">
+                        <img src="./home-images/nav2.png" class="menu-image">
+                    </div>
             </div>
         </div>
         <div class="dropdown">
@@ -24,7 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="../collections/motif.html">Motif</a>
                     <a href="../collections/asheville.html">Asheville</a>
                     <a href="../collections/Brocade.html">Brocade</a>
+                    <a href="#">Motif</a>
+                   <a href="#">Minimal</a>
+                    <a href="#">Brocade</a>
+                     <a href="#">Ashville</a>
                 </div>
+                <div class="mega-menu-column1">
+                        <img src="./home-images/nav1.png" alt="Jewelry 1" class="menu-image">
+                        <img src="./home-images/nav2.png" class="menu-image">
+                    </div>
             </div>
         </div>
         <a href="../About us/about.html">About Us</a>
@@ -68,6 +84,12 @@ document.querySelector('.search-button').addEventListener('click', function() {
     }
   });
   
+
+
+
+
+
+
 
     let lastScrollTop = 0; // Stores the last scroll position
     const navbar = document.querySelector(".navbar"); // Selects the navbar element
