@@ -40,3 +40,38 @@ document.getElementById('category-select').addEventListener('change', function (
     }
   });
 });
+
+  function openForm() {
+    document.getElementById("collectionModal").style.display = "block";
+  }
+
+  function closeForm() {
+    document.getElementById("collectionModal").style.display = "none";
+  }
+
+  function addCollection() {
+    const imageUrl = document.getElementById("collectionImage").value;
+    const name = document.getElementById("collectionName").value;
+
+    if (!imageUrl || !name) {
+      alert("Please fill in both fields.");
+      return;
+    }
+
+    console.log("Collection added:", { name, imageUrl });
+
+    // Clear form
+    document.getElementById("collectionImage").value = "";
+    document.getElementById("collectionName").value = "";
+
+    // Close modal
+    closeForm();
+  }
+
+  // Close modal when clicking outside of it
+  window.onclick = function(event) {
+    const modal = document.getElementById("collectionModal");
+    if (event.target === modal) {
+      closeForm();
+    }
+  }
