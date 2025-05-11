@@ -51,6 +51,21 @@
         <option>Earrings</option>
       </select>
     </div>
+<!-- Add Collection Button -->
+<div style="margin-bottom: 20px;">
+  <button class="add-collection-btn" onclick="openForm()">+ Add Collection</button>
+</div>
+
+<!-- Modal Form -->
+<div id="collectionModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeForm()">&times;</span>
+    <h2>Add New Collection</h2>
+    <input type="text" id="collectionImage" placeholder="Image URL" />
+    <input type="text" id="collectionName" placeholder="Name of Collection" />
+    <button onclick="addCollection()">Add</button>
+  </div>
+</div>
 
     <div class="table">
     <table >
